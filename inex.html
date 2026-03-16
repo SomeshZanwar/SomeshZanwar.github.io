@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Somesh Zanwar | Data & Analytics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #050816;
+      --bg-alt: #0b1120;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56,189,248,0.15);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --card: #020617;
+      --border: #1f2937;
+      --danger: #f97373;
+      --font-main: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      --mono: "JetBrains Mono", "Fira Code", Menlo, ui-monospace, SFMono-Regular, monospace;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      background: radial-gradient(circle at top, #1d283a 0, #020617 50%, #000 100%);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    main { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+    @media (min-width: 768px) { main { padding: 3rem 2rem 5rem; } }
+
+    /* Top nav */
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2.5rem;
+    }
+    .nav-left {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+    .nav-name {
+      font-weight: 650;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .nav-role {
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.2rem;
+      font-size: 0.85rem;
+    }
+    .nav-links a {
+      position: relative;
+      padding-bottom: 0.1rem;
+    }
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0; bottom: 0;
+      width: 0;
+      height: 1px;
+      background: linear-gradient(90deg, var(--accent), #a855f7);
+      transition: width 0.2s ease;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* Layout */
+    .grid {
+      display: grid;
+      gap: 2rem;
+    }
+    @media (min-width: 900px) {
+      .grid-2 {
+        grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+        align-items: start;
+      }
+    }
+
+    /* Hero */
+    .hero {
+      padding: 1.75rem 1.5rem 1.75rem;
+      border-radius: 1.2rem;
+      background: radial-gradient(circle at top left, #0f172a, #020617);
+      border: 1px solid var(--border);
+      box-shadow: 0 24px 80px rgba(15,23,42,0.9);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background:
+        radial-gradient(circle at 10% 0, rgba(56,189,248,0.22) 0, transparent 45%),
+        radial-gradient(circle at 80% 0, rgba(168,85,247,0.2) 0, transparent 45%);
+      opacity: 0.9;
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
+    .hero-inner { position: relative; z-index: 1; }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .hero-title {
+      font-size: clamp(1.9rem, 3vw, 2.2rem);
+      font-weight: 650;
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+    }
+    .hero-title span {
+      background: linear-gradient(120deg, #38bdf8, #a855f7, #22c55e);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .hero-subtitle {
+      font-size: 0.98rem;
+      color: var(--muted);
+      max-width: 36rem;
+      margin-bottom: 1.25rem;
+    }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-bottom: 1.4rem;
+    }
+    .pill {
+      font-size: 0.72rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.35);
+      background: rgba(15,23,42,0.7);
+      color: var(--muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.32rem;
+      backdrop-filter: blur(10px);
+    }
+    .pill-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 3px rgba(34,197,94,0.25);
+    }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .btn {
+      border-radius: 999px;
+      padding: 0.55rem 1.15rem;
+      font-size: 0.85rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: linear-gradient(120deg, #38bdf8, #a855f7);
+      color: #0b1120;
+      font-weight: 550;
+      text-decoration: none;
+      box-shadow: 0 14px 30px rgba(56,189,248,0.22);
+    }
+    .btn-secondary {
+      background: rgba(15,23,42,0.8);
+      color: var(--text);
+      border-color: rgba(148,163,184,0.45);
+      box-shadow: none;
+    }
+    .btn span.icon {
+      font-family: var(--mono);
+      font-size: 0.85em;
+    }
+
+    /* Cards */
+    .section {
+      margin-top: 2.5rem;
+    }
+    .section-title {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .section-sub {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1.1rem;
+    }
+    .card {
+      background: linear-gradient(145deg, rgba(15,23,42,0.98), #020617);
+      border-radius: 1.05rem;
+      border: 1px solid rgba(30,64,175,0.9);
+      padding: 1.15rem 1.25rem;
+      box-shadow: 0 20px 60px rgba(15,23,42,0.75);
+    }
+    .card + .card { margin-top: 0.9rem; }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.75rem;
+      margin-bottom: 0.4rem;
+    }
+    .card-title {
+      font-size: 0.98rem;
+      font-weight: 560;
+    }
+    .card-meta {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.5rem;
+      font-size: 0.72rem;
+    }
+    .tag {
+      border-radius: 999px;
+      padding: 0.18rem 0.6rem;
+      border: 1px solid rgba(148,163,184,0.4);
+      color: var(--muted);
+      background: rgba(15,23,42,0.9);
+    }
+    .card-body {
+      font-size: 0.86rem;
+      color: var(--muted);
+      margin-top: 0.4rem;
+      line-height: 1.55;
+    }
+    .card-list {
+      margin: 0.45rem 0 0;
+      padding-left: 1.2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .card-list li { margin-bottom: 0.25rem; }
+
+    /* Skills grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: minmax(0,1fr);
+      gap: 0.75rem;
+    }
+    @media (min-width: 700px) {
+      .skills-grid {
+        grid-template-columns: repeat(3,minmax(0,1fr));
+      }
+    }
+    .skills-pill-title {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+    .skills-items {
+      font-size: 0.84rem;
+      color: var(--text);
+    }
+
+    /* Footer contact */
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid rgba(31,41,55,0.9);
+      font-size: 0.82rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Top nav -->
+    <header class="nav">
+      <div class="nav-left">
+        <div class="nav-name">SOMESH ZANWAR</div>
+        <div class="nav-role">Data Analyst · Analytics Engineer · Graduate Data Science Student</div>
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Data & Analytics Portfolio</div>
+        <h1 class="hero-title">
+          Turning messy operational data into <span>analysis‑ready pipelines and BI stories</span>.
+        </h1>
+        <p class="hero-subtitle">
+          Graduate Data Science student at UT Arlington with hands‑on experience processing 80K–541K+ record datasets,
+          building SQL‑driven analytics pipelines, and shipping dashboards that cut manual reporting time and surface
+          real business impact.
+        </p>
+        <div class="pill-row">
+          <div class="pill"><span class="pill-dot"></span> Seeking Data / BI Analyst roles</div>
+          <div class="pill">SQL‑based analytics & KPI design</div>
+          <div class="pill">Automated dashboards & experimentation</div>
+        </div>
+        <div class="hero-cta">
+          <a class="btn" href="#projects">
+            View case studies <span class="icon">→</span>
+          </a>
+          <a class="btn btn-secondary" href="#contact">
+            Download resume <span class="icon">.pdf</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About + Experience -->
+    <section id="about" class="section">
+      <div class="grid grid-2">
+        <div>
+          <h2 class="section-title">About</h2>
+          <p class="section-sub">
+            I specialize in bridging raw, noisy operational data and the decisions it powers — from SQL pipelines and
+            feature‑ready tables to dashboards that tell a clear story for stakeholders.
+          </p>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">Graduate Data Science Student</div>
+              <div class="card-meta">UT Arlington · 2025–2026</div>
+            </div>
+            <div class="card-body">
+              Master’s student focusing on SQL‑based analytics, KPI design, and business intelligence, with coursework in
+              data mining, deep learning, optimization, cloud computing, and database systems.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">B.E. in AI & Machine Learning</div>
+              <div class="card-meta">Pune University · 2020–2024</div>
+            </div>
+            <div class="card-body">
+              Built a strong foundation in machine learning, NLP, big data analytics, and operating systems, now applied
+              to real‑world analytics, experimentation, and dashboarding problems.
+            </div>
+          </div>
+        </div>
+
+        <div id="experience">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-sub">
+            Recent work highlights focused on data preparation, SQL optimization, and insight delivery for operational
+            stakeholders.
+          </p>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">Junior Data Analyst</div>
+              <div class="card-meta">IVS Software Solutions · Jun 2023 – Sep 2024 · Pune, India</div>
+            </div>
+            <ul class="card-list">
+              <li>Processed and transformed 80K–150K record operational datasets using Python (Pandas, NumPy) and SQL to create analysis‑ready data for analytics and reporting.</li>
+              <li>Ran EDA on multivariate datasets to uncover trends, anomalies, and data‑quality issues, cutting data processing time by 30%.</li>
+              <li>Wrote and optimized complex SQL queries (joins, aggregations, filters), reducing data preparation time by 40% through streamlined pipelines.</li>
+              <li>Developed internal Streamlit, Matplotlib, and Plotly dashboards to monitor data distributions, anomalies, and operational performance metrics.</li>
+              <li>Partnered with ML engineers to ensure cleaned datasets integrated smoothly into experimentation pipelines.</li>
+            </ul>
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">EDA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">
+        A toolbox built around the full analytics lifecycle — from ingestion and transformation to modeling and BI delivery.
+      </p>
+      <div class="card">
+        <div class="skills-grid">
+          <div>
+            <div class="skills-pill-title">Ingestion & Transformation</div>
+            <div class="skills-items">
+              SQL (joins, aggregations, window functions, query optimization), ETL pipelines, data preparation,
+              PostgreSQL, MySQL, BigQuery.
+            </div>
+          </div>
+          <div>
+            <div class="skills-pill-title">Analysis & Modeling</div>
+            <div class="skills-items">
+              Python, Pandas, NumPy, EDA, hypothesis testing, A/B testing, scikit‑learn, XGBoost, Random Forest,
+              K‑Means, feature engineering.
+            </div>
+          </div>
+          <div>
+            <div class="skills-pill-title">Visualization & Impact</div>
+            <div class="skills-items">
+              Power BI, Tableau, Streamlit, Plotly, Excel, KPI reporting, dashboard design, data storytelling.
+            </div>
+          </div>
+          <div>
+            <div class="skills-pill-title">Data Platforms</div>
+            <div class="skills-items">
+              Google Cloud Platform, data warehousing concepts, data modeling.
+            </div>
+          </div>
+          <div>
+            <div class="skills-pill-title">Tooling</div>
+            <div class="skills-items">
+              Git, Docker, Salesforce (CRM), collaborative workflows with engineers and stakeholders.
+            </div>
+          </div>
+          <div>
+            <div class="skills-pill-title">Currently Sharpening</div>
+            <div class="skills-items">
+              Advanced BI storytelling, experimentation design, scalable analytics on cloud platforms.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Case Studies</h2>
+      <p class="section-sub">
+        Selected work where I owned the analytics pipeline end‑to‑end — from raw data to decisions.
+      </p>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">SQL Retail Analytics & Inventory Optimization Dashboard</div>
+          <div class="card-meta">Retail Analytics · Jan 2026</div>
+        </div>
+        <div class="card-body">
+          <strong>Problem.</strong> Retail stakeholders were managing 541K+ transactions in spreadsheets, making it hard to track revenue drivers and inventory health in real time.  
+          <br /><br />
+          <strong>Action.</strong> Architected a SQL‑ and Python‑based pipeline to process and transform
