@@ -2,35 +2,29 @@
 <html lang="en">
 <head>
 
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <title>Somesh Zanwar | Data Analyst Portfolio</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="description" content="Somesh Zanwar Data Analyst Portfolio. SQL analytics, BI dashboards, machine learning, and data analytics projects.">
+<meta name="description" content="Somesh Zanwar Data Analyst portfolio showcasing SQL analytics pipelines, BI dashboards, and machine learning projects.">
 
 <style>
 
 :root{
 --bg:#050816;
---bg-alt:#0b1120;
 --accent:#38bdf8;
 --text:#e5e7eb;
 --muted:#9ca3af;
 --border:#1f2937;
---font-main:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
-
-*{box-sizing:border-box}
 
 body{
 margin:0;
-font-family:var(--font-main);
 background:radial-gradient(circle at top,#1d283a 0,#020617 50%,#000 100%);
 color:var(--text);
 }
-
-a{color:var(--accent);text-decoration:none}
 
 main{
 max-width:1100px;
@@ -38,9 +32,15 @@ margin:auto;
 padding:40px 20px;
 }
 
+a{
+color:var(--accent);
+text-decoration:none;
+}
+
 .nav{
 display:flex;
 justify-content:space-between;
+align-items:center;
 margin-bottom:40px;
 }
 
@@ -61,7 +61,6 @@ margin-bottom:40px;
 .hero-title{
 font-size:32px;
 font-weight:600;
-margin-bottom:10px;
 }
 
 .hero-title span{
@@ -72,14 +71,31 @@ color:transparent;
 
 .hero-subtitle{
 color:var(--muted);
-max-width:600px;
+max-width:650px;
+margin-top:10px;
 margin-bottom:20px;
+}
+
+.pill-row{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-bottom:20px;
+}
+
+.pill{
+background:#0f172a;
+border:1px solid var(--border);
+padding:6px 12px;
+border-radius:999px;
+font-size:12px;
+color:var(--muted);
 }
 
 .hero-cta{
 display:flex;
-gap:12px;
 flex-wrap:wrap;
+gap:10px;
 }
 
 .btn{
@@ -98,7 +114,7 @@ border:1px solid var(--border);
 }
 
 .section{
-margin-top:50px;
+margin-top:60px;
 }
 
 .section-title{
@@ -134,8 +150,8 @@ color:var(--muted);
 
 .card-body{
 font-size:14px;
-color:var(--muted);
 line-height:1.6;
+color:var(--muted);
 }
 
 .tag{
@@ -147,19 +163,24 @@ margin-right:5px;
 }
 
 .footer{
-margin-top:60px;
+margin-top:80px;
 border-top:1px solid var(--border);
 padding-top:20px;
 font-size:12px;
 color:var(--muted);
+display:flex;
+gap:20px;
+flex-wrap:wrap;
 }
 
 </style>
 </head>
 
+
 <body>
 
 <main>
+
 
 <header class="nav">
 
@@ -173,28 +194,39 @@ Data Analyst | BI Analyst | Data Science Graduate Student
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
 <a href="#projects">Projects</a>
+<a href="SomeshZanwar.pdf" download>Resume</a>
 <a href="#contact">Contact</a>
 </nav>
 
 </header>
 
+
 <section class="hero">
 
 <h1 class="hero-title">
 Turning messy operational data into
-<span>analysis-ready pipelines and BI stories</span>
+<span>analysis-ready pipelines and BI insights</span>
 </h1>
 
 <p class="hero-subtitle">
+
 Graduate Data Science student at UT Arlington targeting Data Analyst and BI Analyst roles.  
-Experienced in analyzing large datasets, building SQL pipelines, and developing dashboards that drive business insights.
+Experienced analyzing datasets up to 541K+ records and building analytics pipelines and dashboards that surface business insights.
+
 </p>
+
+
+<div class="pill-row">
+<div class="pill">541K+ retail transactions analyzed</div>
+<div class="pill">40% faster data preparation</div>
+<div class="pill">2 analytics dashboards built</div>
+<div class="pill">ROC-AUC 0.84 churn model</div>
+</div>
+
 
 <div class="hero-cta">
 
-<a class="btn" href="#projects">
-View Projects →
-</a>
+<a class="btn" href="#projects">View Projects →</a>
 
 <a class="btn btn-secondary" href="SomeshZanwar.pdf" download>
 Download Resume
@@ -213,6 +245,7 @@ LinkedIn
 </section>
 
 
+
 <section id="about" class="section">
 
 <h2 class="section-title">About</h2>
@@ -221,8 +254,8 @@ LinkedIn
 
 <p class="card-body">
 
-I focus on transforming raw operational data into structured analytics systems.  
-My work spans SQL pipelines, machine learning models, and business intelligence dashboards that support data-driven decisions.
+I specialize in transforming raw operational data into structured analytics systems.  
+My work focuses on building SQL pipelines, machine learning models, and BI dashboards that support data-driven decision making.
 
 Currently pursuing a Master’s in Data Science at the University of Texas at Arlington.
 
@@ -231,6 +264,7 @@ Currently pursuing a Master’s in Data Science at the University of Texas at Ar
 </div>
 
 </section>
+
 
 
 <section id="skills" class="section">
@@ -246,8 +280,13 @@ SQL, Python, Pandas, NumPy, ETL Pipelines
 
 <br><br>
 
-<strong>Analytics & Modeling</strong><br>
-EDA, Hypothesis Testing, Feature Engineering, XGBoost, Random Forest, K-Means
+<strong>Analytics</strong><br>
+EDA, Hypothesis Testing, Feature Engineering, A/B Testing
+
+<br><br>
+
+<strong>Machine Learning</strong><br>
+XGBoost, Random Forest, Logistic Regression, K-Means
 
 <br><br>
 
@@ -266,6 +305,7 @@ PostgreSQL, MySQL, BigQuery, Google Cloud, Git
 </section>
 
 
+
 <section id="experience" class="section">
 
 <h2 class="section-title">Experience</h2>
@@ -279,8 +319,9 @@ PostgreSQL, MySQL, BigQuery, Google Cloud, Git
 
 <p class="card-body">
 
-Processed 80K–150K record datasets using Python and SQL to build analysis-ready datasets.  
-Optimized SQL pipelines reducing data preparation time by 40%.
+Processed and transformed **80K–150K record datasets** using Python and SQL to build analysis-ready datasets.  
+
+Optimized SQL pipelines reducing **data preparation time by 40%**.  
 
 Developed internal dashboards using Streamlit and Plotly to monitor operational metrics and anomalies.
 
@@ -291,9 +332,11 @@ Developed internal dashboards using Streamlit and Plotly to monitor operational 
 </section>
 
 
+
 <section id="projects" class="section">
 
 <h2 class="section-title">Projects</h2>
+
 
 
 <div class="card">
@@ -305,10 +348,24 @@ Developed internal dashboards using Streamlit and Plotly to monitor operational 
 
 <p class="card-body">
 
-Designed a SQL and Python analytics pipeline processing 541K+ retail transactions.  
-Built dashboards identifying top-performing products and revenue drivers.
+<strong>Problem</strong><br>
+Retail teams relied on spreadsheets to track **541K transactions**, making revenue analysis slow.
 
-Reduced reporting time by automating analysis workflows.
+<br><br>
+
+<strong>Solution</strong><br>
+Built a SQL transformation pipeline and Streamlit dashboard to automate KPI reporting.
+
+<br><br>
+
+<strong>Impact</strong><br>
+• 40% faster reporting  
+• Identified top 20% SKUs generating 75% revenue
+
+<br><br>
+
+<strong>Tech</strong><br>
+SQL · Python · Streamlit · Plotly
 
 </p>
 
@@ -329,8 +386,23 @@ GitHub Repo
 
 <p class="card-body">
 
-Developed a machine learning churn prediction model using XGBoost and SHAP explainability.  
-Achieved ROC-AUC of 0.84 and improved recall for high-risk customer segments.
+<strong>Problem</strong><br>
+Identify high-risk customers likely to churn.
+
+<br><br>
+
+<strong>Solution</strong><br>
+Built an XGBoost model with feature engineering and SHAP explainability.
+
+<br><br>
+
+<strong>Impact</strong><br>
+ROC-AUC **0.84** and improved recall for high-risk segments.
+
+<br><br>
+
+<strong>Tech</strong><br>
+Python · XGBoost · SHAP · scikit-learn
 
 </p>
 
@@ -343,38 +415,24 @@ GitHub Repo
 </section>
 
 
-<section id="contact" class="section">
 
-<h2 class="section-title">Contact</h2>
+<section id="architecture" class="section">
+
+<h2 class="section-title">Data Pipeline Architecture</h2>
 
 <div class="card">
 
 <p class="card-body">
 
-Email:  
-<a href="mailto:someshzanwar345@gmail.com">someshzanwar345@gmail.com</a>
-
-<br><br>
-
-Location  
-Arlington, Texas, United States
-
-<br><br>
-
-Profiles  
-
-<br>
-
-<a href="https://www.linkedin.com/in/someshzanwar" target="_blank">LinkedIn</a>  
-<a href="https://github.com/SomeshZanwar" target="_blank">GitHub</a>
-
-<br><br>
-
-Resume  
-
-<br>
-
-<a href="SomeshZanwar.pdf" download>Download PDF</a>
+Raw Transaction Data  
+↓  
+SQL Data Cleaning & Transformation  
+↓  
+Feature Engineering  
+↓  
+Analytics Tables  
+↓  
+Dashboard / Machine Learning Models
 
 </p>
 
@@ -383,11 +441,52 @@ Resume
 </section>
 
 
+
+<section id="contact" class="section">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
+
+<p class="card-body">
+
+Email  
+<a href="mailto:someshzanwar345@gmail.com">
+someshzanwar345@gmail.com
+</a>
+
+<br><br>
+
+Location  
+Arlington, Texas, United States
+
+<br><br>
+
+<a href="SomeshZanwar.pdf" download>Download Resume</a>
+
+<br><br>
+
+<a href="https://github.com/SomeshZanwar" target="_blank">GitHub</a>  
+<a href="https://www.linkedin.com/in/someshzanwar" target="_blank">LinkedIn</a>
+
+</p>
+
+</div>
+
+</section>
+
+
+
 <footer class="footer">
 
-© <span id="year"></span> Somesh Zanwar · Data Analytics Portfolio
+© <span id="year"></span> Somesh Zanwar
+
+<a href="SomeshZanwar.pdf" download>Resume</a>
+<a href="https://github.com/SomeshZanwar">GitHub</a>
+<a href="https://linkedin.com/in/someshzanwar">LinkedIn</a>
 
 </footer>
+
 
 </main>
 
