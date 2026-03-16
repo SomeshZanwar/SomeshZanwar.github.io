@@ -328,9 +328,9 @@
           Turning messy operational data into <span>analysis‑ready pipelines and BI stories</span>.
         </h1>
         <p class="hero-subtitle">
-          Graduate Data Science student at UT Arlington with hands‑on experience processing 80K–541K+ record datasets,
-          building SQL‑driven analytics pipelines, and shipping dashboards that cut manual reporting time and surface
-          real business impact.
+          Graduate Data Science student at UT Arlington targeting Data Analyst and BI Analyst roles, with hands‑on
+          experience processing 80K–541K+ record datasets, building SQL‑driven analytics pipelines, and shipping
+          dashboards that cut manual reporting time and surface real business impact.
         </p>
         <div class="pill-row">
           <div class="pill"><span class="pill-dot"></span> Seeking Data / BI Analyst roles</div>
@@ -341,7 +341,7 @@
           <a class="btn" href="#projects">
             View case studies <span class="icon">→</span>
           </a>
-          <a class="btn btn-secondary" href="#contact">
+          <a class="btn btn-secondary" href="Somesh_Zanwar_Resume.pdf" target="_blank">
             Download resume <span class="icon">.pdf</span>
           </a>
         </div>
@@ -474,4 +474,91 @@
         <div class="card-body">
           <strong>Problem.</strong> Retail stakeholders were managing 541K+ transactions in spreadsheets, making it hard to track revenue drivers and inventory health in real time.  
           <br /><br />
-          <strong>Action.</strong> Architected a SQL‑ and Python‑based pipeline to process and transform
+          <strong>Action.</strong> Architected a SQL‑ and Python‑based pipeline to process and transform 541K+ transactions into analysis‑ready datasets, engineered aggregations and indexing strategies, and designed an automated Streamlit + Plotly dashboard.  
+          <br /><br />
+          <strong>Impact.</strong> Reduced dashboard load times by 40%, identified the top 20% of products generating 75% of revenue (ABC analysis) to guide procurement, and replaced spreadsheet workflows, saving stakeholders 3–4 hours weekly.
+        </div>
+        <div class="card-tags">
+          <span class="tag">SQL</span>
+          <span class="tag">Python</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">Plotly</span>
+          <span class="tag">Inventory Analytics</span>
+        </div>
+        <div class="card-tags" style="margin-top:0.5rem;">
+          <a class="tag"
+             href="https://github.com/SomeshZanwar/retail-sales-inventory-analytics"
+             target="_blank">
+            View GitHub repo
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Customer Churn Prediction with SHAP Explainability</div>
+          <div class="card-meta">Predictive Analytics · Dec 2025</div>
+        </div>
+        <div class="card-body">
+          <strong>Problem.</strong> Understanding which customers were likely to churn and why, to focus retention efforts on high‑risk segments.  
+          <br /><br />
+          <strong>Action.</strong> Developed an end‑to‑end churn pipeline using XGBoost on 7,043 customers and 21 features, engineered predictive features, and applied resampling techniques to handle class imbalance. Used SHAP values to interpret model behavior and expose key churn drivers.  
+          <br /><br />
+          <strong>Impact.</strong> Achieved ROC‑AUC of 0.84 and F1‑score of 0.66, with an 18% improvement in recall on high‑risk segments, giving stakeholders a transparent, data‑driven view of churn risk.
+        </div>
+        <div class="card-tags">
+          <span class="tag">Python</span>
+          <span class="tag">XGBoost</span>
+          <span class="tag">scikit‑learn</span>
+          <span class="tag">SHAP</span>
+          <span class="tag">Imbalanced Learning</span>
+        </div>
+        <div class="card-tags" style="margin-top:0.5rem;">
+          <a class="tag"
+             href="https://github.com/SomeshZanwar/customer-churn-prediction-explainability"
+             target="_blank">
+            View GitHub repo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">
+        Open to Data Analyst, BI Analyst, and Analytics Engineer roles and internships.
+      </p>
+      <div class="card">
+        <div class="card-body">
+          <p style="margin-top:0;">
+            <strong>Email:</strong> <a href="mailto:someshzanwar345@gmail.com">someshzanwar345@gmail.com</a><br />
+            <strong>Location:</strong> Arlington, Texas, United States
+          </p>
+          <p>
+            <strong>Profiles:</strong><br />
+            <a href="https://www.linkedin.com/in/someshzanwar" target="_blank">LinkedIn</a> ·
+            <a href="https://github.com/SomeshZanwar" target="_blank">GitHub</a>
+          </p>
+          <p>
+            <strong>Resume:</strong>
+            <a href="Somesh_Zanwar_Resume.pdf" target="_blank">Download PDF</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>© <span id="year"></span> Somesh Zanwar · Data & Analytics Portfolio</div>
+      <div class="footer-links">
+        <span>Built with GitHub Pages</span>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
