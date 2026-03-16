@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Somesh Zanwar | Data Analyst Portfolio</title>
-
-<meta name="description" content="Somesh Zanwar Data Analyst portfolio showcasing SQL analytics pipelines, BI dashboards, and machine learning projects.">
+<title>Somesh Zanwar | Data Analyst</title>
 
 <style>
 
 :root{
---bg:#0b1120;
---card:#111827;
+--bg:#020617;
+--card:#0f172a;
 --accent:#38bdf8;
 --accent2:#a855f7;
 --text:#e5e7eb;
---muted:#9ca3af;
---border:#1f2937;
+--muted:#94a3b8;
+--border:#1e293b;
 font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
 
 body{
 margin:0;
-background:linear-gradient(180deg,#020617,#020617 60%,#020617);
+background:var(--bg);
 color:var(--text);
 }
 
@@ -34,7 +33,10 @@ margin:auto;
 padding:40px 24px;
 }
 
-a{color:var(--accent);text-decoration:none}
+a{
+color:var(--accent);
+text-decoration:none;
+}
 
 .nav{
 position:sticky;
@@ -59,11 +61,11 @@ grid-template-columns:1.2fr 1fr;
 gap:40px;
 align-items:center;
 margin-top:60px;
-margin-bottom:60px;
+margin-bottom:80px;
 }
 
 .hero-title{
-font-size:38px;
+font-size:40px;
 font-weight:700;
 line-height:1.2;
 }
@@ -76,7 +78,7 @@ color:transparent;
 
 .hero-sub{
 color:var(--muted);
-margin-top:12px;
+margin-top:16px;
 line-height:1.6;
 }
 
@@ -93,7 +95,7 @@ border-radius:999px;
 font-size:14px;
 font-weight:600;
 background:linear-gradient(120deg,#38bdf8,#a855f7);
-color:#000;
+color:black;
 }
 
 .btn-secondary{
@@ -106,24 +108,23 @@ color:var(--text);
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:16px;
-margin-top:20px;
 }
 
 .stat{
 background:var(--card);
 border:1px solid var(--border);
-padding:16px;
+padding:20px;
 border-radius:12px;
 text-align:center;
 }
 
 .stat strong{
-font-size:20px;
+font-size:22px;
 display:block;
 }
 
 .section{
-margin-top:80px;
+margin-top:90px;
 }
 
 .section-title{
@@ -138,19 +139,18 @@ margin-bottom:20px;
 background:var(--card);
 border:1px solid var(--border);
 border-radius:14px;
-padding:24px;
-margin-bottom:20px;
+padding:28px;
+margin-bottom:24px;
+}
+
+.featured{
+padding:40px;
+border:1px solid #1d4ed8;
 }
 
 .project-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:20px;
-}
-
-.skills-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
 gap:20px;
 }
 
@@ -162,15 +162,35 @@ font-size:12px;
 margin-right:6px;
 }
 
+.pipeline{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.pipeline-step{
+background:#0f172a;
+padding:16px;
+border-radius:10px;
+border:1px solid var(--border);
+}
+
+.sql-box{
+background:#020617;
+border:1px solid var(--border);
+padding:20px;
+font-family:monospace;
+border-radius:10px;
+margin-top:20px;
+}
+
 .footer{
 margin-top:100px;
 border-top:1px solid var(--border);
 padding-top:20px;
 font-size:13px;
 color:var(--muted);
-display:flex;
-gap:20px;
-flex-wrap:wrap;
 }
 
 @media(max-width:900px){
@@ -180,10 +200,6 @@ grid-template-columns:1fr;
 }
 
 .project-grid{
-grid-template-columns:1fr;
-}
-
-.skills-grid{
 grid-template-columns:1fr;
 }
 
@@ -202,7 +218,6 @@ grid-template-columns:1fr;
 <nav class="nav-links">
 <a href="#projects">Projects</a>
 <a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
 <a href="SomeshZanwar.pdf" download>Resume</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -212,7 +227,6 @@ grid-template-columns:1fr;
 
 <main>
 
-
 <section class="hero">
 
 <div>
@@ -220,19 +234,18 @@ grid-template-columns:1fr;
 <h1 class="hero-title">
 
 Data Analyst building <span>SQL pipelines and BI dashboards</span>
-that transform operational data into insights
 
 </h1>
 
 <p class="hero-sub">
 
-Graduate Data Science student at UT Arlington with experience analyzing datasets up to 541K records, building analytics pipelines, and developing dashboards for business insights.
+Graduate Data Science student at UT Arlington analyzing large datasets and building analytics pipelines that convert operational data into business insights.
 
 </p>
 
 <div class="hero-buttons">
 
-<a class="btn" href="#projects">View Projects</a>
+<a class="btn" href="#featured">Featured Project</a>
 
 <a class="btn btn-secondary" href="SomeshZanwar.pdf" download>
 Download Resume
@@ -242,30 +255,25 @@ Download Resume
 GitHub
 </a>
 
-<a class="btn btn-secondary" href="https://linkedin.com/in/someshzanwar">
-LinkedIn
-</a>
-
 </div>
 
 </div>
-
 
 <div class="stats">
 
 <div class="stat">
 <strong>541K+</strong>
-Transactions Analyzed
+Transactions analyzed
 </div>
 
 <div class="stat">
 <strong>40%</strong>
-Faster Data Prep
+Faster data prep
 </div>
 
 <div class="stat">
 <strong>2</strong>
-Analytics Dashboards
+Analytics dashboards
 </div>
 
 <div class="stat">
@@ -278,6 +286,94 @@ Churn ROC-AUC
 </section>
 
 
+<section id="featured" class="section">
+
+<h2 class="section-title">Featured Project</h2>
+
+<div class="card featured">
+
+<h2>Retail Sales Analytics Pipeline</h2>
+
+<p>
+
+End-to-end analytics pipeline analyzing 541K retail transactions and generating automated KPI dashboards.
+
+</p>
+
+<h3>Impact</h3>
+
+<ul>
+
+<li>Reduced reporting time by 40%</li>
+<li>Identified top revenue products</li>
+<li>Automated weekly sales insights</li>
+
+</ul>
+
+<p>
+
+<span class="tag">SQL</span>
+<span class="tag">Python</span>
+<span class="tag">Streamlit</span>
+<span class="tag">Plotly</span>
+
+</p>
+
+<a href="https://github.com/SomeshZanwar/retail-sales-inventory-analytics">View GitHub Repo</a>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2 class="section-title">Data Pipeline Architecture</h2>
+
+<div class="pipeline">
+
+<div class="pipeline-step">
+Raw Transaction Data
+</div>
+
+<div class="pipeline-step">
+SQL Cleaning & Aggregation
+</div>
+
+<div class="pipeline-step">
+Python EDA
+</div>
+
+<div class="pipeline-step">
+Feature Tables
+</div>
+
+<div class="pipeline-step">
+Streamlit Dashboard
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2 class="section-title">SQL Example</h2>
+
+<div class="sql-box">
+
+SELECT product_id,<br>
+SUM(revenue) AS total_revenue<br>
+FROM retail_sales<br>
+GROUP BY product_id<br>
+ORDER BY total_revenue DESC<br>
+LIMIT 10;
+
+</div>
+
+</section>
+
 
 <section id="projects" class="section">
 
@@ -287,33 +383,11 @@ Churn ROC-AUC
 
 <div class="card">
 
-<h3>Retail Sales Analytics</h3>
+<h3>Retail Analytics Dashboard</h3>
 
 <p>
 
-Built SQL pipeline analyzing 541K retail transactions and automated sales KPI reporting.
-
-</p>
-
-<p>
-
-<strong>Impact</strong>
-
-<br>
-
-• 40% faster reporting
-
-<br>
-
-• Identified top revenue products
-
-</p>
-
-<p>
-
-<span class="tag">SQL</span>
-<span class="tag">Python</span>
-<span class="tag">Streamlit</span>
+SQL + Python analytics pipeline analyzing 541K retail transactions.
 
 </p>
 
@@ -328,25 +402,7 @@ Built SQL pipeline analyzing 541K retail transactions and automated sales KPI re
 
 <p>
 
-Built XGBoost churn model with SHAP explainability.
-
-</p>
-
-<p>
-
-<strong>Impact</strong>
-
-<br>
-
-ROC-AUC 0.84
-
-</p>
-
-<p>
-
-<span class="tag">Python</span>
-<span class="tag">XGBoost</span>
-<span class="tag">SHAP</span>
+Machine learning churn model using XGBoost and SHAP explainability.
 
 </p>
 
@@ -359,96 +415,17 @@ ROC-AUC 0.84
 </section>
 
 
-
 <section id="skills" class="section">
 
 <h2 class="section-title">Skills</h2>
 
-<div class="skills-grid">
-
 <div class="card">
 
-<strong>Data Processing</strong>
-
-<p>
-
-SQL · Python · Pandas · NumPy · ETL
-
-</p>
-
-</div>
-
-
-<div class="card">
-
-<strong>Analytics</strong>
-
-<p>
-
-EDA · Hypothesis Testing · Feature Engineering
-
-</p>
-
-</div>
-
-
-<div class="card">
-
-<strong>Machine Learning</strong>
-
-<p>
-
-XGBoost · Random Forest · K-Means
-
-</p>
-
-</div>
-
-
-<div class="card">
-
-<strong>Visualization</strong>
-
-<p>
-
-Power BI · Tableau · Streamlit · Plotly
-
-</p>
-
-</div>
+SQL · Python · Pandas · NumPy · Power BI · Tableau · Streamlit · XGBoost · Machine Learning · Data Modeling
 
 </div>
 
 </section>
-
-
-
-<section id="experience" class="section">
-
-<h2 class="section-title">Experience</h2>
-
-<div class="card">
-
-<h3>Junior Data Analyst</h3>
-
-<p>
-
-IVS Software Solutions — 2023–2024
-
-</p>
-
-<p>
-
-Processed 80K–150K operational records using Python and SQL and reduced data preparation time by 40%.
-
-Developed internal dashboards using Streamlit and Plotly to monitor performance metrics.
-
-</p>
-
-</div>
-
-</section>
-
 
 
 <section id="contact" class="section">
@@ -457,10 +434,10 @@ Developed internal dashboards using Streamlit and Plotly to monitor performance 
 
 <div class="card">
 
-<p>
-
 Email  
-<a href="mailto:someshzanwar345@gmail.com">someshzanwar345@gmail.com</a>
+<a href="mailto:someshzanwar345@gmail.com">
+someshzanwar345@gmail.com
+</a>
 
 <br><br>
 
@@ -473,8 +450,6 @@ Email
 <br>
 
 <a href="https://linkedin.com/in/someshzanwar">LinkedIn</a>
-
-</p>
 
 </div>
 
@@ -495,4 +470,5 @@ document.getElementById("year").textContent=new Date().getFullYear();
 </script>
 
 </body>
+
 </html>
