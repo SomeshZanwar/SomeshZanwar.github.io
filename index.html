@@ -266,8 +266,8 @@ LinkedIn
 <div class="stats">
 
 <div class="stat">
-<strong>SQL-Driven</strong>
-Analytics Pipelines
+<strong>AI-based</strong>
+Data Governance System
 </div>
 
 <div class="stat">
@@ -281,8 +281,8 @@ Data Workflows
 </div>
 
 <div class="stat">
-<strong>Built</strong>
-Predictive Models
+<strong>SQL-Driven</strong>
+Analytics Pipelines
 </div>
 
 </div>
@@ -296,35 +296,34 @@ Predictive Models
 
 <div class="card featured">
 
-<h2>Retail Sales Analytics Pipeline</h2>
+<h2>AI Data Governance Model </h2>
 
 <p>
 
-End-to-end analytics pipeline analyzing 541K retail transactions and generating automated KPI dashboards.
-
+Designed and implemented an end-to-end governance system that ingests GitHub Archive data, models analytics datasets with dbt, executes automated quality rules, tracks incidents, computes dataset health scores, and surfaces governance insights through a Power BI monitoring dashboard with AI-generated explanations.
 </p>
 
 <h3>Impact</h3>
 
 <ul>
 
-<li>Reduced reporting time by 40%</li>
-<li>Identified top revenue products</li>
-<li>Automated weekly sales insights</li>
+<li>Designed and implemented an end-to-end governance system that ingests GitHub Archive data, models analytics datasets with dbt, executes automated quality rules, tracks incidents, computes dataset health scores, and surfaces governance insights through a Power BI monitoring dashboard with AI-generated explanations.</li>
+<li>Built an AI-assisted data governance platform that ingests GitHub Archive data and monitors dataset quality across analytics tables using automated rule checks.</li>
+<li>Designed a governance metadata system (dataset registry, rule catalog, incident tracking, health scores) to operationalize dataset monitoring and reliability.</li>
 
 </ul>
 
 <p>
 
-<span class="tag">SQL</span>
+<span class="tag">PostgreSQL</span>
 <span class="tag">Python</span>
-<span class="tag">Streamlit</span>
-<span class="tag">Plotly</span>
-<span class="tag">KPI Reporting</span>
+<span class="tag">dbt</span>
+<span class="tag">Power BI</span>
+<span class="tag">LLM</span>
   
 </p>
 
-<a href="https://github.com/SomeshZanwar/retail-sales-inventory-analytics">View GitHub Repo</a>
+<a href="">View GitHub Repo</a>
 
 </div>
 
@@ -338,45 +337,37 @@ End-to-end analytics pipeline analyzing 541K retail transactions and generating 
 <div class="pipeline">
 
 <div class="pipeline-step">
-Raw Transaction Data
+Github Archive Dataset
 </div>
 
 <div class="pipeline-step">
-SQL Cleaning & Aggregation
+Python Ingestion Script
 </div>
 
 <div class="pipeline-step">
-Python EDA
+PostgreSQL Raw Layer
 </div>
 
 <div class="pipeline-step">
-Feature Tables
+dbt Transformation Layer
 </div>
 
 <div class="pipeline-step">
-Streamlit Dashboard
+Analytics Layer
 </div>
 
+<div class="pipeline-step">
+Governance Layer
 </div>
 
-</section>
-
-
-<section class="section">
-
-<h2 class="section-title">SQL Example</h2>
-
-<div class="sql-box">
-
-SELECT product_id,<br>
-SUM(revenue) AS total_revenue<br>
-FROM retail_sales<br>
-GROUP BY product_id<br>
-ORDER BY total_revenue DESC<br>
-LIMIT 10;
-
+<div class="pipeline-step">
+AI Layer
+</div>
 </div>
 
+<div class="pipeline-step">
+Power BI Dashboard
+</div>
 </section>
 
 
@@ -385,6 +376,32 @@ LIMIT 10;
 <h2 class="section-title">Projects</h2>
 
 <div class="project-grid">
+
+
+<div class="card">
+
+<h3>AI Data Governance Model</h3>
+
+<p>
+
+• Built an AI-assisted data governance platform using PostgreSQL, dbt, and Python to monitor GitHub Archive datasets and enforce automated data quality rules.
+
+
+
+
+</p>
+<p>
+• Designed a governance metadata layer (dataset registry, rule catalog, rule runs, health scoring, incident tracking) to operationalize dataset monitoring across analytics tables
+</p>
+<p>
+• Implemented a rule execution engine and AI-based incident explanation assistant, enabling automated detection, scoring, and explanation of data quality failures surfaced in a Power BI governance dashboard.
+</p>
+
+<a href="">GitHub Repo</a>
+
+</div>
+
+</div>
 
 <div class="card">
 
