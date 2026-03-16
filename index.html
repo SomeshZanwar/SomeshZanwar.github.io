@@ -3,17 +3,19 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Somesh Zanwar | Data Analyst Portfolio</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Somesh Zanwar | Data Analyst Portfolio</title>
 
 <meta name="description" content="Somesh Zanwar Data Analyst portfolio showcasing SQL analytics pipelines, BI dashboards, and machine learning projects.">
 
 <style>
 
 :root{
---bg:#050816;
+--bg:#0b1120;
+--card:#111827;
 --accent:#38bdf8;
+--accent2:#a855f7;
 --text:#e5e7eb;
 --muted:#9ca3af;
 --border:#1f2937;
@@ -22,26 +24,27 @@ font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 
 body{
 margin:0;
-background:radial-gradient(circle at top,#1d283a 0,#020617 50%,#000 100%);
+background:linear-gradient(180deg,#020617,#020617 60%,#020617);
 color:var(--text);
 }
 
 main{
 max-width:1100px;
 margin:auto;
-padding:40px 20px;
+padding:40px 24px;
 }
 
-a{
-color:var(--accent);
-text-decoration:none;
-}
+a{color:var(--accent);text-decoration:none}
 
 .nav{
+position:sticky;
+top:0;
+background:#020617;
+border-bottom:1px solid var(--border);
+padding:16px 24px;
 display:flex;
 justify-content:space-between;
-align-items:center;
-margin-bottom:40px;
+z-index:100;
 }
 
 .nav-links{
@@ -51,149 +54,155 @@ font-size:14px;
 }
 
 .hero{
-padding:30px;
-border-radius:18px;
-background:#020617;
-border:1px solid var(--border);
-margin-bottom:40px;
+display:grid;
+grid-template-columns:1.2fr 1fr;
+gap:40px;
+align-items:center;
+margin-top:60px;
+margin-bottom:60px;
 }
 
 .hero-title{
-font-size:32px;
-font-weight:600;
+font-size:38px;
+font-weight:700;
+line-height:1.2;
 }
 
 .hero-title span{
-background:linear-gradient(120deg,#38bdf8,#a855f7,#22c55e);
+background:linear-gradient(120deg,#38bdf8,#a855f7);
 -webkit-background-clip:text;
 color:transparent;
 }
 
-.hero-subtitle{
+.hero-sub{
 color:var(--muted);
-max-width:650px;
-margin-top:10px;
-margin-bottom:20px;
+margin-top:12px;
+line-height:1.6;
 }
 
-.pill-row{
+.hero-buttons{
+margin-top:24px;
 display:flex;
+gap:12px;
 flex-wrap:wrap;
-gap:10px;
-margin-bottom:20px;
-}
-
-.pill{
-background:#0f172a;
-border:1px solid var(--border);
-padding:6px 12px;
-border-radius:999px;
-font-size:12px;
-color:var(--muted);
-}
-
-.hero-cta{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
 }
 
 .btn{
-padding:10px 16px;
+padding:10px 18px;
 border-radius:999px;
 font-size:14px;
+font-weight:600;
 background:linear-gradient(120deg,#38bdf8,#a855f7);
 color:#000;
-font-weight:600;
 }
 
 .btn-secondary{
 background:#0f172a;
-color:#e5e7eb;
 border:1px solid var(--border);
+color:var(--text);
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:16px;
+margin-top:20px;
+}
+
+.stat{
+background:var(--card);
+border:1px solid var(--border);
+padding:16px;
+border-radius:12px;
+text-align:center;
+}
+
+.stat strong{
+font-size:20px;
+display:block;
 }
 
 .section{
-margin-top:60px;
+margin-top:80px;
 }
 
 .section-title{
-font-size:14px;
+font-size:13px;
 letter-spacing:2px;
 text-transform:uppercase;
 color:var(--muted);
-margin-bottom:10px;
+margin-bottom:20px;
 }
 
 .card{
-background:#020617;
+background:var(--card);
 border:1px solid var(--border);
 border-radius:14px;
-padding:20px;
-margin-top:15px;
+padding:24px;
+margin-bottom:20px;
 }
 
-.card-header{
-display:flex;
-justify-content:space-between;
-margin-bottom:10px;
+.project-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
 }
 
-.card-title{
-font-weight:600;
-}
-
-.card-meta{
-font-size:12px;
-color:var(--muted);
-}
-
-.card-body{
-font-size:14px;
-line-height:1.6;
-color:var(--muted);
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
 }
 
 .tag{
 border:1px solid var(--border);
-padding:3px 10px;
+padding:4px 10px;
 border-radius:999px;
 font-size:12px;
-margin-right:5px;
+margin-right:6px;
 }
 
 .footer{
-margin-top:80px;
+margin-top:100px;
 border-top:1px solid var(--border);
 padding-top:20px;
-font-size:12px;
+font-size:13px;
 color:var(--muted);
 display:flex;
 gap:20px;
 flex-wrap:wrap;
 }
 
-</style>
-</head>
+@media(max-width:900px){
 
+.hero{
+grid-template-columns:1fr;
+}
+
+.project-grid{
+grid-template-columns:1fr;
+}
+
+.skills-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
 
 <body>
 
-<main>
-
-
 <header class="nav">
 
-<div>
-<strong>SOMESH ZANWAR</strong><br>
-Data Analyst | BI Analyst | Data Science Graduate Student
-</div>
+<div><strong>Somesh Zanwar</strong></div>
 
 <nav class="nav-links">
-<a href="#about">About</a>
+<a href="#projects">Projects</a>
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
 <a href="SomeshZanwar.pdf" download>Resume</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -201,44 +210,68 @@ Data Analyst | BI Analyst | Data Science Graduate Student
 </header>
 
 
+<main>
+
+
 <section class="hero">
 
+<div>
+
 <h1 class="hero-title">
-Turning messy operational data into
-<span>analysis-ready pipelines and BI insights</span>
+
+Data Analyst building <span>SQL pipelines and BI dashboards</span>
+that transform operational data into insights
+
 </h1>
 
-<p class="hero-subtitle">
+<p class="hero-sub">
 
-Graduate Data Science student at UT Arlington targeting Data Analyst and BI Analyst roles.  
-Experienced analyzing datasets up to 541K+ records and building analytics pipelines and dashboards that surface business insights.
+Graduate Data Science student at UT Arlington with experience analyzing datasets up to 541K records, building analytics pipelines, and developing dashboards for business insights.
 
 </p>
 
+<div class="hero-buttons">
 
-<div class="pill-row">
-<div class="pill">541K+ retail transactions analyzed</div>
-<div class="pill">40% faster data preparation</div>
-<div class="pill">2 analytics dashboards built</div>
-<div class="pill">ROC-AUC 0.84 churn model</div>
-</div>
-
-
-<div class="hero-cta">
-
-<a class="btn" href="#projects">View Projects →</a>
+<a class="btn" href="#projects">View Projects</a>
 
 <a class="btn btn-secondary" href="SomeshZanwar.pdf" download>
 Download Resume
 </a>
 
-<a class="btn btn-secondary" href="https://github.com/SomeshZanwar" target="_blank">
+<a class="btn btn-secondary" href="https://github.com/SomeshZanwar">
 GitHub
 </a>
 
-<a class="btn btn-secondary" href="https://www.linkedin.com/in/someshzanwar" target="_blank">
+<a class="btn btn-secondary" href="https://linkedin.com/in/someshzanwar">
 LinkedIn
 </a>
+
+</div>
+
+</div>
+
+
+<div class="stats">
+
+<div class="stat">
+<strong>541K+</strong>
+Transactions Analyzed
+</div>
+
+<div class="stat">
+<strong>40%</strong>
+Faster Data Prep
+</div>
+
+<div class="stat">
+<strong>2</strong>
+Analytics Dashboards
+</div>
+
+<div class="stat">
+<strong>0.84</strong>
+Churn ROC-AUC
+</div>
 
 </div>
 
@@ -246,20 +279,80 @@ LinkedIn
 
 
 
-<section id="about" class="section">
+<section id="projects" class="section">
 
-<h2 class="section-title">About</h2>
+<h2 class="section-title">Projects</h2>
+
+<div class="project-grid">
 
 <div class="card">
 
-<p class="card-body">
+<h3>Retail Sales Analytics</h3>
 
-I specialize in transforming raw operational data into structured analytics systems.  
-My work focuses on building SQL pipelines, machine learning models, and BI dashboards that support data-driven decision making.
+<p>
 
-Currently pursuing a Master’s in Data Science at the University of Texas at Arlington.
+Built SQL pipeline analyzing 541K retail transactions and automated sales KPI reporting.
 
 </p>
+
+<p>
+
+<strong>Impact</strong>
+
+<br>
+
+• 40% faster reporting
+
+<br>
+
+• Identified top revenue products
+
+</p>
+
+<p>
+
+<span class="tag">SQL</span>
+<span class="tag">Python</span>
+<span class="tag">Streamlit</span>
+
+</p>
+
+<a href="https://github.com/SomeshZanwar/retail-sales-inventory-analytics">GitHub Repo</a>
+
+</div>
+
+
+<div class="card">
+
+<h3>Customer Churn Prediction</h3>
+
+<p>
+
+Built XGBoost churn model with SHAP explainability.
+
+</p>
+
+<p>
+
+<strong>Impact</strong>
+
+<br>
+
+ROC-AUC 0.84
+
+</p>
+
+<p>
+
+<span class="tag">Python</span>
+<span class="tag">XGBoost</span>
+<span class="tag">SHAP</span>
+
+</p>
+
+<a href="https://github.com/SomeshZanwar/customer-churn-prediction-explainability">GitHub Repo</a>
+
+</div>
 
 </div>
 
@@ -271,34 +364,58 @@ Currently pursuing a Master’s in Data Science at the University of Texas at Ar
 
 <h2 class="section-title">Skills</h2>
 
+<div class="skills-grid">
+
 <div class="card">
 
-<p class="card-body">
+<strong>Data Processing</strong>
 
-<strong>Data Processing</strong><br>
-SQL, Python, Pandas, NumPy, ETL Pipelines
+<p>
 
-<br><br>
-
-<strong>Analytics</strong><br>
-EDA, Hypothesis Testing, Feature Engineering, A/B Testing
-
-<br><br>
-
-<strong>Machine Learning</strong><br>
-XGBoost, Random Forest, Logistic Regression, K-Means
-
-<br><br>
-
-<strong>Visualization</strong><br>
-Power BI, Tableau, Streamlit, Plotly, Excel
-
-<br><br>
-
-<strong>Platforms</strong><br>
-PostgreSQL, MySQL, BigQuery, Google Cloud, Git
+SQL · Python · Pandas · NumPy · ETL
 
 </p>
+
+</div>
+
+
+<div class="card">
+
+<strong>Analytics</strong>
+
+<p>
+
+EDA · Hypothesis Testing · Feature Engineering
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<strong>Machine Learning</strong>
+
+<p>
+
+XGBoost · Random Forest · K-Means
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<strong>Visualization</strong>
+
+<p>
+
+Power BI · Tableau · Streamlit · Plotly
+
+</p>
+
+</div>
 
 </div>
 
@@ -312,127 +429,19 @@ PostgreSQL, MySQL, BigQuery, Google Cloud, Git
 
 <div class="card">
 
-<div class="card-header">
-<div class="card-title">Junior Data Analyst</div>
-<div class="card-meta">IVS Software Solutions · 2023–2024</div>
-</div>
+<h3>Junior Data Analyst</h3>
 
-<p class="card-body">
+<p>
 
-Processed and transformed **80K–150K record datasets** using Python and SQL to build analysis-ready datasets.  
-
-Optimized SQL pipelines reducing **data preparation time by 40%**.  
-
-Developed internal dashboards using Streamlit and Plotly to monitor operational metrics and anomalies.
+IVS Software Solutions — 2023–2024
 
 </p>
 
-</div>
+<p>
 
-</section>
+Processed 80K–150K operational records using Python and SQL and reduced data preparation time by 40%.
 
-
-
-<section id="projects" class="section">
-
-<h2 class="section-title">Projects</h2>
-
-
-
-<div class="card">
-
-<div class="card-header">
-<div class="card-title">Retail Sales & Inventory Analytics</div>
-<div class="card-meta">2026</div>
-</div>
-
-<p class="card-body">
-
-<strong>Problem</strong><br>
-Retail teams relied on spreadsheets to track **541K transactions**, making revenue analysis slow.
-
-<br><br>
-
-<strong>Solution</strong><br>
-Built a SQL transformation pipeline and Streamlit dashboard to automate KPI reporting.
-
-<br><br>
-
-<strong>Impact</strong><br>
-• 40% faster reporting  
-• Identified top 20% SKUs generating 75% revenue
-
-<br><br>
-
-<strong>Tech</strong><br>
-SQL · Python · Streamlit · Plotly
-
-</p>
-
-<a class="tag" href="https://github.com/SomeshZanwar/retail-sales-inventory-analytics" target="_blank">
-GitHub Repo
-</a>
-
-</div>
-
-
-
-<div class="card">
-
-<div class="card-header">
-<div class="card-title">Customer Churn Prediction</div>
-<div class="card-meta">2025</div>
-</div>
-
-<p class="card-body">
-
-<strong>Problem</strong><br>
-Identify high-risk customers likely to churn.
-
-<br><br>
-
-<strong>Solution</strong><br>
-Built an XGBoost model with feature engineering and SHAP explainability.
-
-<br><br>
-
-<strong>Impact</strong><br>
-ROC-AUC **0.84** and improved recall for high-risk segments.
-
-<br><br>
-
-<strong>Tech</strong><br>
-Python · XGBoost · SHAP · scikit-learn
-
-</p>
-
-<a class="tag" href="https://github.com/SomeshZanwar/customer-churn-prediction-explainability" target="_blank">
-GitHub Repo
-</a>
-
-</div>
-
-</section>
-
-
-
-<section id="architecture" class="section">
-
-<h2 class="section-title">Data Pipeline Architecture</h2>
-
-<div class="card">
-
-<p class="card-body">
-
-Raw Transaction Data  
-↓  
-SQL Data Cleaning & Transformation  
-↓  
-Feature Engineering  
-↓  
-Analytics Tables  
-↓  
-Dashboard / Machine Learning Models
+Developed internal dashboards using Streamlit and Plotly to monitor performance metrics.
 
 </p>
 
@@ -448,17 +457,10 @@ Dashboard / Machine Learning Models
 
 <div class="card">
 
-<p class="card-body">
+<p>
 
 Email  
-<a href="mailto:someshzanwar345@gmail.com">
-someshzanwar345@gmail.com
-</a>
-
-<br><br>
-
-Location  
-Arlington, Texas, United States
+<a href="mailto:someshzanwar345@gmail.com">someshzanwar345@gmail.com</a>
 
 <br><br>
 
@@ -466,8 +468,11 @@ Arlington, Texas, United States
 
 <br><br>
 
-<a href="https://github.com/SomeshZanwar" target="_blank">GitHub</a>  
-<a href="https://www.linkedin.com/in/someshzanwar" target="_blank">LinkedIn</a>
+<a href="https://github.com/SomeshZanwar">GitHub</a>
+
+<br>
+
+<a href="https://linkedin.com/in/someshzanwar">LinkedIn</a>
 
 </p>
 
@@ -476,17 +481,11 @@ Arlington, Texas, United States
 </section>
 
 
-
 <footer class="footer">
 
 © <span id="year"></span> Somesh Zanwar
 
-<a href="SomeshZanwar.pdf" download>Resume</a>
-<a href="https://github.com/SomeshZanwar">GitHub</a>
-<a href="https://linkedin.com/in/someshzanwar">LinkedIn</a>
-
 </footer>
-
 
 </main>
 
