@@ -450,7 +450,7 @@ footer a:hover { color: var(--gold); opacity: 1; }
       <div class="pos-label">What I focus on</div>
       <div class="pos-text">
         <p>Most analytics problems aren't about building dashboards. They're about whether the data behind the dashboard can be trusted, whether the metric actually answers the right question, and whether anyone will act on the output.</p>
-        <p>That's what I focus on: building systems where data is validated before it reaches reporting, experiments are structured before results are interpreted, and insights are framed clearly enough to drive a decision, not just fill a slide.</p>
+        <p>That's what I focus on: building systems where data is validated before it reaches reporting, experiments are structured before results are interpreted, and insights are framed clearly enough to drive a decision — not just fill a slide.</p>
       </div>
     </div>
   </div>
@@ -544,9 +544,30 @@ footer a:hover { color: var(--gold); opacity: 1; }
     </div>
     <div class="proj-grid">
 
+      <!-- Metric Decomposition Engine -->
+      <div class="proj-card" style="grid-column: 1 / -1;">
+        <div class="proj-num">PROJECT · 01 &nbsp;·&nbsp; <span style="color:var(--gold)">NEW</span></div>
+        <h3 class="proj-title" style="font-size:17px;">Metric Decomposition Engine</h3>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 4px;">
+          <ul class="proj-bullets">
+            <li>Built an automated root-cause analysis system that answers the most common analyst question — "why did this metric change?" — by decomposing any event-based metric across multiple dimensions and ranking each segment's contribution to the total movement.</li>
+            <li>Engineered a dimensional drilldown pipeline on GitHub Archive data (1.3M+ events) using PostgreSQL and pandas — processing baseline vs. comparison periods across actor, repository, and organization dimensions in seconds.</li>
+          </ul>
+          <ul class="proj-bullets">
+            <li>Generated plain-English incident reports via a Jinja2 template engine: executive summary, dimensional breakdowns, root cause hypothesis, and recommended next steps — stakeholder-ready with no manual formatting.</li>
+            <li>Built an interactive Streamlit dashboard letting analysts select any event type, date range, and dimension set on demand — turning a multi-hour manual investigation into a self-serve workflow.</li>
+          </ul>
+        </div>
+        <div class="proj-outcome" style="margin-top:16px;">
+          <strong>Outcome</strong>
+          What used to take hours of manual slicing is now a self-serve analysis that runs in seconds and outputs a report ready to share with a PM or stakeholder.
+        </div>
+        <div class="proj-foot"><a class="proj-link" href="https://github.com/SomeshZanwar/metric-decomposition-engine" target="_blank">GitHub Repo →</a></div>
+      </div>
+
       <!-- Decision Intelligence -->
       <div class="proj-card">
-        <div class="proj-num">PROJECT · 01</div>
+        <div class="proj-num">PROJECT · 02</div>
         <h3 class="proj-title">Decision Intelligence Experimentation Platform</h3>
         <ul class="proj-bullets">
           <li>Architected an end-to-end A/B testing platform simulating 50K+ users and 280K+ events, enabling statistically rigorous evaluation of product feature variants across user segments.</li>
@@ -563,7 +584,7 @@ footer a:hover { color: var(--gold); opacity: 1; }
 
       <!-- AI Governance -->
       <div class="proj-card">
-        <div class="proj-num">PROJECT · 02</div>
+        <div class="proj-num">PROJECT · 03</div>
         <h3 class="proj-title">AI Data Governance Model</h3>
         <ul class="proj-bullets">
           <li>Engineered a governance layer monitoring 150K+ daily events across ingestion pipelines, enforcing schema validation and automated cross-source reconciliation for 90% of data sources.</li>
@@ -580,7 +601,7 @@ footer a:hover { color: var(--gold); opacity: 1; }
 
       <!-- Retail Analytics -->
       <div class="proj-card">
-        <div class="proj-num">PROJECT · 03</div>
+        <div class="proj-num">PROJECT · 04</div>
         <h3 class="proj-title">Retail Analytics &amp; Inventory Intelligence Dashboard</h3>
         <ul class="proj-bullets">
           <li>Applied Pareto analysis to identify the top 20% of SKUs driving 75% of revenue, enabling data-backed inventory reallocation and merchandising decisions.</li>
@@ -593,7 +614,7 @@ footer a:hover { color: var(--gold); opacity: 1; }
 
       <!-- Churn Prediction -->
       <div class="proj-card">
-        <div class="proj-num">PROJECT · 04</div>
+        <div class="proj-num">PROJECT · 05</div>
         <h3 class="proj-title">Customer Churn Prediction</h3>
         <ul class="proj-bullets">
           <li>Built an end-to-end churn prediction pipeline using XGBoost on 7,043 customers and 21 features, achieving ROC-AUC 0.84.</li>
