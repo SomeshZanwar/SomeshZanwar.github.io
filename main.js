@@ -112,12 +112,12 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  /* ── NAV SCROLL TINT ── */
+   /* ── NAV SCROLL TINT ── */
   const nav = document.querySelector('.nav');
   window.addEventListener('scroll', () => {
     if (nav) nav.style.background = window.scrollY > 50
-      ? 'rgba(8,8,10,0.96)'
-      : 'rgba(8,8,10,0.8)';
+      ? 'rgba(7,20,38,0.96)'
+      : 'rgba(7,20,38,0.86)';
   }, { passive: true });
 
   /* ── PIPELINE STEP HOVER PROPAGATE ── */
