@@ -905,3 +905,317 @@ footer a:hover { color: var(--amber); }
   #cursor, #cursor-ring { display: none; }
   body { cursor: auto; }
 }
+
+/* ═══════════════════════════════════════════════
+   THEME OVERRIDE — BEIGE + NAVY + SOFT WHITE
+   ═══════════════════════════════════════════════ */
+
+body {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(216,195,165,0.055), transparent 28%),
+    radial-gradient(circle at 85% 18%, rgba(242,232,213,0.035), transparent 25%),
+    var(--bg);
+}
+
+body::after {
+  background: radial-gradient(
+    ellipse 80% 80% at 50% 0%,
+    transparent 35%,
+    rgba(7,20,38,0.58) 100%
+  );
+}
+
+#spotlight {
+  background: radial-gradient(
+    620px circle at var(--mx,50%) var(--my,30%),
+    rgba(216,195,165,0.055) 0%,
+    transparent 70%
+  );
+}
+
+#cursor { background: var(--amber); }
+
+#cursor-ring {
+  border-color: rgba(216,195,165,0.42);
+}
+
+.nav {
+  background: rgba(7,20,38,0.86);
+  border-bottom-color: rgba(216,195,165,0.16);
+}
+
+.nav-links a:hover {
+  background: rgba(216,195,165,0.08);
+}
+
+.nav-cta,
+.btn-primary {
+  background: var(--amber) !important;
+  color: var(--bg) !important;
+  box-shadow: 0 0 0 rgba(216,195,165,0) !important;
+}
+
+.nav-cta:hover,
+.btn-primary:hover {
+  background: #e6d2b7 !important;
+  box-shadow: 0 12px 32px rgba(216,195,165,0.28) !important;
+}
+
+.btn-ghost {
+  color: var(--text2);
+  border-color: rgba(216,195,165,0.20);
+  background: rgba(7,20,38,0.18);
+}
+
+.btn-ghost:hover {
+  color: var(--text);
+  border-color: rgba(216,195,165,0.42);
+  background: rgba(216,195,165,0.07);
+}
+
+.hero-bg-grid {
+  background-image:
+    linear-gradient(rgba(216,195,165,0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(216,195,165,0.09) 1px, transparent 1px);
+  opacity: 0.45;
+}
+
+.hero-tag,
+.hero-h1 .line-accent,
+.nav-brand .prompt,
+#hero-cursor,
+.m-val,
+.sec-index,
+.exp-company,
+.gov-problem .highlight,
+.gov-badge,
+.pipe-step:hover,
+.proj-link,
+.edu-school,
+footer a:hover {
+  color: var(--amber) !important;
+}
+
+.hero-tag::before {
+  background: linear-gradient(90deg, var(--amber), transparent);
+}
+
+.hero-h1 .line-dim,
+#hero-typed {
+  color: var(--text2);
+}
+
+.hero-body,
+.pos-text,
+.gov-desc,
+.layer-desc,
+.proj-list li,
+.exp-list li,
+.oss-list li,
+.edu-courses {
+  color: var(--text2);
+}
+
+.hero-body strong,
+.pos-text strong,
+.proj-outcome strong,
+.edu-courses strong {
+  color: var(--text);
+}
+
+.exp-card,
+.governance-card,
+.oss-card,
+.proj-card,
+.edu-card,
+.metrics-list,
+.panel-header,
+.skill-col,
+.contact-cell {
+  background: linear-gradient(
+    180deg,
+    rgba(16,42,74,0.96),
+    rgba(10,27,51,0.96)
+  );
+  border-color: rgba(216,195,165,0.18);
+}
+
+.exp-card:hover,
+.oss-card:hover,
+.proj-card:hover,
+.edu-card:hover {
+  border-color: rgba(216,195,165,0.38);
+}
+
+.metric-row,
+.exp-header,
+.gov-top,
+.gov-pipeline,
+.oss-footer,
+.section,
+.pos-strip,
+footer {
+  border-color: rgba(216,195,165,0.14);
+}
+
+.metric-row::before {
+  background: rgba(216,195,165,0.08);
+}
+
+.metric-row:hover,
+.gov-layer:hover,
+.contact-cell:hover {
+  background: rgba(216,195,165,0.045);
+}
+
+.sec-line {
+  background: linear-gradient(90deg, rgba(216,195,165,0.28), transparent);
+}
+
+.sec-index,
+.exp-stat,
+.layer-tag.amber,
+.gov-badge,
+.proj-new,
+.edu-gpa {
+  background: rgba(216,195,165,0.08);
+  border-color: rgba(216,195,165,0.24);
+}
+
+.exp-stat,
+.proj-new,
+.edu-gpa {
+  color: var(--amber) !important;
+}
+
+.exp-list li,
+.oss-list li,
+.proj-list li,
+.skill-list li {
+  border-bottom-color: rgba(216,195,165,0.10);
+}
+
+.exp-list li::before,
+.proj-list li::before,
+.oss-list li::before {
+  color: var(--amber-dim) !important;
+}
+
+.governance-card::before {
+  background: linear-gradient(90deg, var(--amber), var(--text), var(--amber));
+}
+
+.layer-tag.violet,
+.status-pill.accepted,
+.m-badge.accepted,
+.oss-card.a2a .oss-list li code {
+  color: var(--text2) !important;
+  background: rgba(242,232,213,0.075) !important;
+  border-color: rgba(242,232,213,0.22) !important;
+}
+
+.layer-link:hover,
+.layer-link.violet-link:hover,
+.oss-footer a:hover,
+.oss-card.a2a .oss-footer a:hover {
+  color: var(--amber) !important;
+  border-color: var(--amber-dim) !important;
+}
+
+.oss-card.agt::after,
+.oss-card.a2a::after {
+  background: linear-gradient(90deg, var(--amber), transparent);
+}
+
+.oss-repo,
+.oss-card.a2a .oss-repo,
+.oss-footer a,
+.oss-card.a2a .oss-footer a,
+.layer-link,
+.layer-link.violet-link {
+  color: var(--amber-dim) !important;
+}
+
+.oss-list li code {
+  color: var(--amber) !important;
+  background: rgba(216,195,165,0.09) !important;
+}
+
+.status-pill.merged,
+.m-badge.merged {
+  background: var(--green-faint) !important;
+  color: var(--green) !important;
+  border-color: rgba(167,196,160,0.34) !important;
+}
+
+.pipe-step,
+.pipe-arr,
+.chip {
+  background: rgba(7,20,38,0.28);
+  border-color: rgba(216,195,165,0.16);
+  color: var(--text2);
+}
+
+.pipe-step:hover,
+.chip:hover {
+  background: rgba(216,195,165,0.08);
+  color: var(--text);
+  border-color: rgba(216,195,165,0.34);
+}
+
+.pipe-arr {
+  color: var(--amber-dim);
+}
+
+.proj-outcome {
+  background: rgba(216,195,165,0.065);
+  border-left-color: var(--amber-dim);
+  color: var(--text2);
+}
+
+.skills-layout,
+.contact-layout {
+  background: rgba(216,195,165,0.14);
+  border-color: rgba(216,195,165,0.14);
+}
+
+.skill-col-title {
+  color: var(--amber);
+  border-bottom-color: rgba(216,195,165,0.18);
+}
+
+.skill-list li.hi,
+.skill-list li:hover {
+  color: var(--text);
+}
+
+.skill-list li::before {
+  background: var(--border3);
+}
+
+.skill-list li.hi::before,
+.skill-list li:hover::before {
+  background: var(--amber-dim);
+}
+
+.contact-val,
+.contact-val a {
+  color: var(--text);
+}
+
+.contact-val a:hover {
+  color: var(--amber);
+}
+
+footer {
+  color: var(--text2);
+}
+
+footer a {
+  color: var(--text3);
+}
+
+::selection {
+  background: rgba(216,195,165,0.28);
+  color: var(--text);
+}
