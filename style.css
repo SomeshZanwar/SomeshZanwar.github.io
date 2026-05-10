@@ -7,34 +7,39 @@
 
 /* ── TOKENS ── */
 :root {
-  --bg:           #08080a;
-  --bg2:          #0d0d10;
-  --surface:      #141419;
-  --surface2:     #1c1c24;
-  --surface3:     #22222c;
-  --border:       #2a2a36;
-  --border2:      #383848;
-  --border3:      #4a4a60;
-  --amber:        #f0b429;
-  --amber-dim:    #a07820;
-  --amber-glow:   rgba(240,180,41,0.15);
-  --amber-faint:  rgba(240,180,41,0.06);
-  --violet:       #7c6af7;
-  --violet-dim:   #4a3fa8;
-  --violet-faint: rgba(124,106,247,0.08);
-  --green:        #34d399;
-  --green-faint:  rgba(52,211,153,0.1);
-  --red:          #f87171;
-  --text:         #f4f4f8;
-  --text2:        #c8c8dc;
-  --text3:        #8a8aaa;
+  --bg:           #071426;
+  --bg2:          #0a1b33;
+  --surface:      #0d2340;
+  --surface2:     #102a4a;
+  --surface3:     #16385f;
+
+  --border:       #243c59;
+  --border2:      #345477;
+  --border3:      #55799f;
+
+  --amber:        #d8c3a5;
+  --amber-dim:    #b89f78;
+  --amber-glow:   rgba(216,195,165,0.18);
+  --amber-faint:  rgba(216,195,165,0.09);
+
+  --violet:       #f2e8d5;
+  --violet-dim:   #c7af8a;
+  --violet-faint: rgba(242,232,213,0.08);
+
+  --green:        #a7c4a0;
+  --green-faint:  rgba(167,196,160,0.12);
+  --red:          #d48772;
+
+  --text:         #f8f4ec;
+  --text2:        #e6d9c7;
+  --text3:        #a9bacd;
+
   --font-display: 'Clash Display', sans-serif;
   --font-mono:    'JetBrains Mono', monospace;
   --font-body:    'Instrument Sans', sans-serif;
   --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
   --ease-spring:  cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-
 /* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
