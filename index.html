@@ -58,10 +58,11 @@
           <span id="hero-typed"></span><span id="hero-cursor">|</span>
         </div>
 
+        <!-- CHANGE 1: "three" → "four" -->
         <p class="hero-body">
           MS Data Science @ UT Arlington <strong>(GPA 3.8)</strong> with 1+ year of industry experience.
-          A track record that goes beyond coursework: <strong>three merged contributions to Microsoft's Agent Governance Toolkit</strong>,
-          A2A/CTEF proposal work, and four deployed analytics systems with live demos.
+          A track record that goes beyond coursework: <strong>four merged contributions to Microsoft's Agent Governance Toolkit</strong>,
+          AgentTrust early contributor invitation, A2A/CTEF proposal work, and four deployed analytics systems with live demos.
           I build systems where data is validated before it reaches reporting,
           agents are authorized before they act on it,
           and insights are framed clearly enough to drive a decision.
@@ -109,6 +110,11 @@
           <div class="metric-row">
             <span class="m-label">A2A/CTEF</span>
             <span class="m-badge accepted">Proposal work</span>
+          </div>
+          <!-- CHANGE 2: New AgentTrust row -->
+          <div class="metric-row">
+            <span class="m-label">AgentTrust</span>
+            <span class="m-badge open">Early Contributor</span>
           </div>
           <div class="metric-row">
             <span class="m-label">GPA</span>
@@ -204,7 +210,7 @@
             <span class="highlight">// the gap:</span> most systems check whether data is accessible. almost none check whether it should be trusted right now — or whether the agent requesting it is authorized to act on it.
           </div>
           <h2 class="gov-title">The Governance Stack</h2>
-          <p class="gov-desc">Two connected projects. One unified question: can this agent use this data right now? The first governs the data & The second governs the agent .</p>
+          <p class="gov-desc">Two connected projects. One unified question: can this agent use this data right now? The first governs the data &amp; The second governs the agent .</p>
         </div>
         <span class="gov-badge">Featured</span>
       </div>
@@ -272,8 +278,8 @@
 
     <div class="oss-grid">
 
-      <!-- Microsoft AGT -->
-      <div class="oss-card agt reveal reveal-delay-1">
+      <!-- CHANGE 3: AGT card — full-width, 2-column bullet layout -->
+      <div class="oss-card agt oss-card-wide reveal reveal-delay-1">
         <div class="oss-top">
           <div>
             <div class="oss-org">Microsoft</div>
@@ -282,19 +288,23 @@
           <span class="status-pill merged">4 PRs Merged</span>
         </div>
         <div class="oss-title">Agent Governance Toolkit Contributions</div>
-        <ul class="oss-list">
-          <li>PR <code>#1818</code> merged: Added Data Quality-Aware Agent Governance to the official AGT adopter registry.</li>
-          <li>PR <code>#2038</code> merged: Verified the Agent SRE tutorial end-to-end and fixed documentation/API reference issues.</li>
-          <li>PR <code>#2224</code> merged: Added a generic data-quality-aware governance example showing AGT policy checks combined with dataset trust signals.</li>
-          <li>PR <code>#2278</code> merged: Added a dbt-backed DataQualityEvidence adapter showing dbt run_results.json → DataQualityEvidence → AGT policy decision flow.</li>
-        </ul>
+        <div class="oss-wide-grid">
+          <ul class="oss-list">
+            <li>PR <code>#1818</code> merged: Added Data Quality-Aware Agent Governance to the official AGT adopter registry.</li>
+            <li>PR <code>#2038</code> merged: Verified the Agent SRE tutorial end-to-end and fixed documentation/API reference issues.</li>
+          </ul>
+          <ul class="oss-list">
+            <li>PR <code>#2224</code> merged: Added a generic data-quality-aware governance example showing AGT policy checks combined with dataset trust signals.</li>
+            <li>PR <code>#2278</code> merged: Added a dbt-backed DataQualityEvidence adapter showing dbt run_results.json → DataQualityEvidence → AGT policy decision flow.</li>
+          </ul>
+        </div>
         <div class="oss-footer">
           Discussion #1795 · PR #1818 · PR #2038 · PR #2224 · PR #2278<br>
           <a href="https://github.com/microsoft/agent-governance-toolkit" target="_blank">github.com/microsoft/agent-governance-toolkit →</a>
         </div>
       </div>
 
-      <!-- A2A -->
+      <!-- CHANGE 4: A2A card — updated with both issues -->
       <div class="oss-card a2a reveal reveal-delay-2">
         <div class="oss-top">
           <div>
@@ -303,15 +313,35 @@
           </div>
           <span class="status-pill accepted">Proposal Work</span>
         </div>
-        <div class="oss-title">Data-Quality Scheme Proposal for CTEF Source Version Registry</div>
+        <div class="oss-title">Data-Quality &amp; Governance Proposals for A2A</div>
         <ul class="oss-list">
-          <li>Proposed Issue <code>#1786</code> exploring a <code>data-quality</code> scheme for the CTEF <code>source_version</code> registry.</li>
-          <li>Prepared conformance-style test vectors to check within-bound, boundary, and out-of-bound data-quality values using canonical hash examples.</li>
-          <li>Tracking maintainer alignment before treating this as a finalized protocol contribution.</li>
+          <li>Issue <code>#1786</code>: Proposed a <code>data-quality</code> scheme for the CTEF <code>source_version</code> registry, with conformance-style test vectors covering within-bound, boundary, and out-of-bound values.</li>
+          <li>Issue <code>#1835</code>: Proposed vendor-neutral documentation for governance and security expectations in agent-to-agent systems — covering trust representation, policy boundaries, and audit evidence.</li>
+          <li>Both proposals are awaiting maintainer response; follow-up planned as the protocol evolves.</li>
         </ul>
         <div class="oss-footer">
-          Issue #1786 · Proposal work<br>
+          Issue #1786 · Issue #1835 · Proposal work<br>
           <a href="https://github.com/a2aproject/A2A" target="_blank">github.com/a2aproject/A2A →</a>
+        </div>
+      </div>
+
+      <!-- CHANGE 5: New AgentTrust card -->
+      <div class="oss-card at reveal reveal-delay-3">
+        <div class="oss-top">
+          <div>
+            <div class="oss-org">AgentTrust</div>
+            <div class="oss-repo">agentTrust · contributor program</div>
+          </div>
+          <span class="status-pill invited">Early Contributor</span>
+        </div>
+        <div class="oss-title">AgentTrust — Early Contributor Invitation</div>
+        <ul class="oss-list">
+          <li>Invited as an early contributor to the AgentTrust project, recognized for work in AI governance, data quality-aware agent systems, and policy-readable evidence patterns.</li>
+          <li>Areas of alignment include agent trust metadata, policy-aware AI systems, governance evidence, RAG corpus binding concepts, and operational AI governance workflows.</li>
+          <li>Contribution direction covers how agent systems expose policy, security, quality, and reliability signals — and how trust metadata connects to drift and trustworthiness checks.</li>
+        </ul>
+        <div class="oss-footer">
+          Early Contributor Program · Invitation received
         </div>
       </div>
 
