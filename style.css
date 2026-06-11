@@ -634,6 +634,19 @@ body::after {
   display: grid; grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
+
+/* NEW: Full-width card spanning both columns */
+.oss-card-wide {
+  grid-column: 1 / -1;
+}
+
+/* NEW: Two-column bullet layout inside the wide card */
+.oss-card-wide .oss-wide-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
+}
+
 .oss-card {
   background: var(--surface2);
   border: 1px solid var(--border2);
@@ -647,6 +660,9 @@ body::after {
 }
 .oss-card.agt::after { background: linear-gradient(90deg, var(--amber), transparent); }
 .oss-card.a2a::after { background: linear-gradient(90deg, var(--violet), transparent); }
+/* NEW: AgentTrust card — green top accent */
+.oss-card.at::after  { background: linear-gradient(90deg, var(--green), transparent); }
+
 .oss-card:hover { border-color: var(--border3); transform: translateY(-3px); }
 
 .oss-top {
@@ -670,8 +686,10 @@ body::after {
   letter-spacing: 0.5px; text-transform: uppercase; white-space: nowrap;
   flex-shrink: 0; margin-top: 2px;
 }
-.status-pill.merged { background: var(--green-faint); color: var(--green); border: 1px solid rgba(52,211,153,0.3); }
+.status-pill.merged   { background: var(--green-faint); color: var(--green); border: 1px solid rgba(52,211,153,0.3); }
 .status-pill.accepted { background: var(--violet-faint); color: #a095fa; border: 1px solid rgba(124,106,247,0.3); }
+/* NEW: invited badge — amber tone for Early Contributor */
+.status-pill.invited  { background: var(--amber-faint); color: var(--amber); border: 1px solid rgba(216,195,165,0.3); }
 
 .oss-title {
   font-family: var(--font-display);
@@ -921,6 +939,8 @@ footer a:hover { color: var(--amber); }
   .gov-layers { grid-template-columns: 1fr; }
   .gov-layer:first-child { border-right: none; border-bottom: 1px solid var(--border); }
   .oss-grid { grid-template-columns: 1fr; }
+  /* NEW: Collapse the wide-grid bullet layout on smaller screens */
+  .oss-card-wide .oss-wide-grid { grid-template-columns: 1fr; }
   .proj-grid { grid-template-columns: 1fr; }
   .proj-card-wide .proj-inner { grid-template-columns: 1fr; gap: 0; }
   .skills-layout { grid-template-columns: 1fr 1fr; }
@@ -1150,6 +1170,13 @@ footer {
   border-color: rgba(242,232,213,0.22) !important;
 }
 
+/* NEW: invited badge theme override — keep amber */
+.status-pill.invited {
+  color: var(--amber) !important;
+  background: rgba(216,195,165,0.09) !important;
+  border-color: rgba(216,195,165,0.30) !important;
+}
+
 .layer-link:hover,
 .layer-link.violet-link:hover,
 .oss-footer a:hover,
@@ -1161,6 +1188,11 @@ footer {
 .oss-card.agt::after,
 .oss-card.a2a::after {
   background: linear-gradient(90deg, var(--amber), transparent);
+}
+
+/* NEW: keep AgentTrust card top accent green */
+.oss-card.at::after {
+  background: linear-gradient(90deg, var(--green), transparent);
 }
 
 .oss-repo,
