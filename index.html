@@ -362,21 +362,40 @@
 
     <div class="proj-grid">
 
-      <!-- Metric Decomposition Engine — full width -->
+      <!-- DataTrust OS — full width, NEW -->
       <div class="proj-card proj-card-wide reveal">
         <div class="proj-num">PROJECT · 01 <span class="proj-new">NEW</span></div>
-        <h3 class="proj-title">Metric Decomposition Engine</h3>
+        <h3 class="proj-title">DataTrust OS</h3>
         <div class="proj-inner">
           <ul class="proj-list">
-            <li>Built an automated root-cause analysis system that answers the most common analyst question — "why did this metric change?" — by decomposing any event-based metric across multiple dimensions and ranking each segment's contribution to the total movement.</li>
-            <li>Engineered a dimensional drilldown pipeline on GitHub Archive data (1.3M+ events) using PostgreSQL and pandas, processing baseline vs. comparison periods across actor, repository, and organization dimensions in seconds.</li>
+            <li>Designed a governance-ready analytics engineering foundation using PostgreSQL, dbt, and Python, combining schema validation, data quality testing, and reconciliation checks into a single base layer for downstream reporting and governance tooling.</li>
+            <li>Built governance marts that expose dataset health scores, validation results, and anomaly flags as structured outputs — turning pipeline-level dbt test results into signals other systems can read.</li>
           </ul>
           <ul class="proj-list">
-            <li>Generated plain-English incident reports via a Jinja2 template engine: executive summary, dimensional breakdowns, root cause hypothesis, and recommended next steps — stakeholder-ready with no manual formatting.</li>
-            <li>Built an interactive Streamlit dashboard letting analysts select any event type, date range, and dimension set on demand, turning a multi-hour manual investigation into a self-serve workflow.</li>
+            <li>Implemented anomaly detection and reconciliation logic comparing transformed records against source records, surfacing discrepancies before they reach a dashboard or stakeholder.</li>
+            <li>Established the data quality evidence layer that the AI Data Governance Platform (Layer 1 of the Governance Stack) is built on top of, connecting dbt test outcomes to governance-ready trust signals.</li>
           </ul>
         </div>
         <div class="proj-outcome" style="margin-top:16px;">
+          <strong>Outcome</strong>
+          The foundational analytics engineering layer beneath the Governance Stack — the schema validation, data quality testing, and governance marts built here are what the AI Data Governance Platform reports on.
+        </div>
+        <div class="proj-footer">
+          <a class="proj-link" href="https://github.com/SomeshZanwar/Datatrust-OS" target="_blank">GitHub Repo →</a>
+        </div>
+      </div>
+
+      <!-- Metric Decomposition Engine -->
+      <div class="proj-card reveal reveal-delay-1">
+        <div class="proj-num">PROJECT · 02</div>
+        <h3 class="proj-title">Metric Decomposition Engine</h3>
+        <ul class="proj-list">
+          <li>Built an automated root-cause analysis system that answers the most common analyst question — "why did this metric change?" — by decomposing any event-based metric across multiple dimensions and ranking each segment's contribution to the total movement.</li>
+          <li>Engineered a dimensional drilldown pipeline on GitHub Archive data (1.3M+ events) using PostgreSQL and pandas, processing baseline vs. comparison periods across actor, repository, and organization dimensions in seconds.</li>
+          <li>Generated plain-English incident reports via a Jinja2 template engine: executive summary, dimensional breakdowns, root cause hypothesis, and recommended next steps — stakeholder-ready with no manual formatting.</li>
+          <li>Built an interactive Streamlit dashboard letting analysts select any event type, date range, and dimension set on demand, turning a multi-hour manual investigation into a self-serve workflow.</li>
+        </ul>
+        <div class="proj-outcome">
           <strong>Outcome</strong>
           What used to take hours of manual slicing is now a self-serve analysis that runs in seconds and outputs a report ready to share with a PM or stakeholder.
         </div>
@@ -387,8 +406,8 @@
       </div>
 
       <!-- Decision Intelligence -->
-      <div class="proj-card reveal reveal-delay-1">
-        <div class="proj-num">PROJECT · 02</div>
+      <div class="proj-card reveal reveal-delay-2">
+        <div class="proj-num">PROJECT · 03</div>
         <h3 class="proj-title">Decision Intelligence Experimentation Platform</h3>
         <ul class="proj-list">
           <li>Architected an end-to-end A/B testing platform simulating 50K+ users and 280K+ events, enabling statistically rigorous evaluation of product feature variants across user segments.</li>
@@ -407,8 +426,8 @@
       </div>
 
       <!-- Retail Analytics -->
-      <div class="proj-card reveal reveal-delay-2">
-        <div class="proj-num">PROJECT · 03</div>
+      <div class="proj-card reveal reveal-delay-3">
+        <div class="proj-num">PROJECT · 04</div>
         <h3 class="proj-title">Retail Analytics &amp; Inventory Intelligence</h3>
         <ul class="proj-list">
           <li>Applied Pareto analysis to identify the top 20% of SKUs driving 75% of revenue, enabling data-backed inventory reallocation and merchandising decisions.</li>
@@ -422,8 +441,8 @@
       </div>
 
       <!-- Churn Prediction -->
-      <div class="proj-card reveal reveal-delay-3">
-        <div class="proj-num">PROJECT · 04</div>
+      <div class="proj-card reveal reveal-delay-4">
+        <div class="proj-num">PROJECT · 05</div>
         <h3 class="proj-title">Customer Churn Prediction &amp; Explainability</h3>
         <ul class="proj-list">
           <li>Built an end-to-end churn prediction pipeline using XGBoost on 7,043 customers and 21 features, achieving ROC-AUC 0.84.</li>
