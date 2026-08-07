@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Somesh Zanwar — Data & Product Analyst. SQL, Python, Power BI, AI Governance, A/B Experimentation. MS Data Science @ UT Arlington.">
-<title>Somesh Zanwar — Data Analyst</title>
+<meta name="description" content="Somesh Zanwar — Data & Product Analyst. MS Data Science @ UT Arlington. SQL, Python, Power BI, dbt, AI Governance.">
+<title>Somesh Zanwar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Instrument+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
@@ -12,134 +12,76 @@
 </head>
 <body>
 
-<!-- CURSOR -->
-<div id="cursor"></div>
-<div id="cursor-ring"></div>
-
-<!-- SPOTLIGHT -->
-<div id="spotlight"></div>
-
 <!-- ── NAV ── -->
 <header class="nav">
-  <div class="nav-brand">
-  <span class="prompt">~/</span>
-  <span class="brand-name">somesh-zanwar | </span>
-  <a class="brand-email" href="mailto:someshzanwar345@gmail.com">someshzanwar345@gmail.com</a>
-  <span class="blink"></span>
-</div>
+  <a href="index.html" class="nav-logo">Somesh Zanwar</a>
   <nav class="nav-links">
-    <a href="#experience" class="nav-mid">Experience</a>
-    <a href="#featured" class="nav-mid">Projects</a>
-    <a href="#opensource" class="nav-mid">Open Source</a>
-    <a href="#skills" class="nav-mid">Skills</a>
-    <a href="Somesh_Zanwar.pdf" download class="nav-mid">Resume</a>
-    <a href="mailto:someshzanwar345@gmail.com" class="nav-cta">Contact</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="experience.html">Experience</a>
+    <a href="tools.html">Tools</a>
+    <a href="opensource.html">Open Source</a>
   </nav>
+  <a href="mailto:someshzanwar345@gmail.com" class="nav-cta">Contact</a>
 </header>
 
 <!-- ══════════════════════════════════════
      HERO
 ══════════════════════════════════════ -->
-<section class="hero-section" id="home">
-  <div class="hero-bg-grid"></div>
+<section class="hero" style="padding-top:var(--nav-h)">
   <div class="wrap">
     <div class="hero-inner">
 
-      <!-- Left -->
+      <!-- Left — identity card -->
       <div>
-        <div class="hero-tag">Product &amp; Data Analyst · UT Arlington · Open to Work</div>
-        <h1 class="hero-h1">
-          Building analytics<br>
-          <span class="line-accent">systems that</span><br>
-          <span class="line-dim">actually get used</span>
-        </h1>
-
-        <div class="hero-typed-wrap">
-          <span id="hero-typed"></span><span id="hero-cursor">|</span>
+        <div class="hero-photo-frame">
+          <img src="Somesh_Headshot.png" alt="Somesh Zanwar">
         </div>
-
-        <!-- CHANGE 1: "three" → "four" -->
-        <p class="hero-body">
-          MS Data Science @ UT Arlington <strong>(GPA 3.8)</strong> with 1+ year of industry experience.
-          A track record that goes beyond coursework: <strong>four merged contributions to Microsoft's Agent Governance Toolkit</strong>,
-          AgentTrust early contributor invitation, A2A/CTEF proposal work, and four deployed analytics systems with live demos.
-          I build systems where data is validated before it reaches reporting,
-          agents are authorized before they act on it,
-          and insights are framed clearly enough to drive a decision.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn-primary" href="#featured">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            View Projects
-          </a>
-          <a class="btn-ghost" href="Somesh_Zanwar.pdf" download>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Resume
-          </a>
-          <a class="btn-ghost" href="https://github.com/SomeshZanwar" target="_blank">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
-          <a class="btn-ghost" href="https://www.linkedin.com/in/someshzanwar" target="_blank">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
-          </a>
+        <div class="hero-id">
+          <div class="hero-name">Somesh Zanwar</div>
+          <div class="hero-role-tag">Data &amp; Product Analyst</div>
+          <div class="hero-loc">Arlington, TX · Open to Work · F-1 OPT</div>
+          <div class="hero-socials">
+            <a class="s-link" href="https://github.com/SomeshZanwar" target="_blank">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a class="s-link" href="https://linkedin.com/in/someshzanwar" target="_blank">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a class="s-link" href="mailto:someshzanwar345@gmail.com">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+              Email
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Right — Metrics Panel -->
-      <div class="hero-panel">
-        <div class="panel-header">
-          <span>live · profile · status</span>
-          <span class="panel-dot"></span>
-        </div>
-        <div class="metrics-list">
-          <div class="metric-row">
-            <span class="m-label">Status</span>
-            <span class="m-val green">● Open to roles</span>
-          </div>
-          <div class="metric-row">
-            <span class="m-label">Work Auth</span>
-            <span class="m-val">F-1 OPT · No sponsorship</span>
-          </div>
-          <div class="metric-row">
-            <span class="m-label">Microsoft AGT</span>
-            <span class="m-badge merged">4 PRs merged</span>
-          </div>
-          <div class="metric-row">
-            <span class="m-label">A2A/CTEF</span>
-            <span class="m-badge accepted">Proposal work</span>
-          </div>
-          <!-- CHANGE 2: New AgentTrust row -->
-          <div class="metric-row">
-            <span class="m-label">AgentTrust</span>
-            <span class="m-badge open">Early Contributor</span>
-          </div>
-          <div class="metric-row">
-            <span class="m-label">GPA</span>
-            <span class="m-val">3.8 / 4.0</span>
-          </div>
-          <div class="metric-row">
-            <span class="m-label">Industry Exp.</span>
-            <span class="m-val">1+ year</span>
-          </div>
-          <div class="metric-row">
-            <span class="m-label">Reporting Accuracy ↑</span>
-            <span class="m-val">+30%</span>
-          </div>
-          <div class="metric-row">
-            <span class="m-label">Data Prep Time ↓</span>
-            <span class="m-val">−40%</span>
-          </div>
-          <div class="metric-row">
-            <span class="m-label">Transactions Processed</span>
-            <span class="m-val"><span data-count="541" data-suffix="K+">541K+</span></span>
-          </div>
-          <div class="metric-row">
-            <span class="m-label">Churn Model ROC-AUC</span>
-            <span class="m-val"><span data-count="0.84" data-decimals="2">0.84</span></span>
-          </div>
+      <!-- Right — big title -->
+      <div>
+        <div class="hero-eyebrow">MS Data Science · UT Arlington · GPA 3.8</div>
+        <h1 class="hero-title">
+          Data<br>
+          <span class="hl">&amp;</span><br>
+          Product<br>
+          Analyst
+        </h1>
+        <p class="hero-body">
+          Building analytics systems that make data <strong>usable, trustworthy, and decision-ready</strong>.
+          Four merged contributions to Microsoft's Agent Governance Toolkit,
+          five deployed projects with live demos, and a clear career focus:
+          find the gap between what a system checks and what it should check — then build the layer that closes it.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="projects.html">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            View Projects
+          </a>
+          <a class="btn btn-outline" href="Somesh_Zanwar.pdf" download>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Resume
+          </a>
         </div>
       </div>
 
@@ -147,469 +89,242 @@
   </div>
 </section>
 
-<!-- ── POSITIONING ── -->
-<div class="wrap">
-  <div class="pos-strip reveal">
-    <div class="pos-eyebrow">What I focus on</div>
-    <div class="pos-text">
-      <p>Most analytics problems aren't about building dashboards. They're about whether the data behind the dashboard can be trusted, whether the metric actually answers the right question, and whether anyone will act on the output.</p>
-      <p>Beyond personal projects, I contribute to the protocols and toolkits that govern how AI agents interact with data, including <strong>four merged contributions to Microsoft's Agent Governance Toolkit</strong> and A2A/CTEF proposal work. The pattern is consistent: find the gap between what a system checks and what it should check, then build the layer that closes it.</p>
+<!-- ── STATS ── -->
+<div class="stats-band">
+  <div class="wrap">
+    <div class="stats-grid reveal">
+      <div class="stat-cell">
+        <div class="stat-num"><span data-count="1" data-suffix="+">1+</span></div>
+        <div class="stat-label">Year of<br>Industry Experience</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num"><span data-count="6" data-suffix="+">6+</span></div>
+        <div class="stat-label">Projects<br>Built &amp; Deployed</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num"><span data-count="4">4</span></div>
+        <div class="stat-label">Microsoft AGT<br>PRs Merged</div>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════════════════════════
-     01 — WORK EXPERIENCE
-══════════════════════════════════════ -->
+<!-- ── MARQUEE TICKERS ── -->
+<div class="ticker-band">
+  <!-- Row 1 -->
+  <div class="ticker-row">
+    <div class="ticker-scroll">
+      <div class="ticker-track">
+        <span>SQL</span><span class="sep">·</span>
+        <span>Python</span><span class="sep">·</span>
+        <span>dbt</span><span class="sep">·</span>
+        <span>PostgreSQL</span><span class="sep">·</span>
+        <span>Power BI</span><span class="sep">·</span>
+        <span>BigQuery</span><span class="sep">·</span>
+        <span>DuckDB</span><span class="sep">·</span>
+        <span>Pandas</span><span class="sep">·</span>
+        <span>Streamlit</span><span class="sep">·</span>
+        <span>Tableau</span><span class="sep">·</span>
+        <span>FastAPI</span><span class="sep">·</span>
+        <span>XGBoost</span><span class="sep">·</span>
+        <!-- duplicate for seamless loop -->
+        <span>SQL</span><span class="sep">·</span>
+        <span>Python</span><span class="sep">·</span>
+        <span>dbt</span><span class="sep">·</span>
+        <span>PostgreSQL</span><span class="sep">·</span>
+        <span>Power BI</span><span class="sep">·</span>
+        <span>BigQuery</span><span class="sep">·</span>
+        <span>DuckDB</span><span class="sep">·</span>
+        <span>Pandas</span><span class="sep">·</span>
+        <span>Streamlit</span><span class="sep">·</span>
+        <span>Tableau</span><span class="sep">·</span>
+        <span>FastAPI</span><span class="sep">·</span>
+        <span>XGBoost</span><span class="sep">·</span>
+      </div>
+    </div>
+    <a class="ticker-link" href="tools.html">./tools →</a>
+  </div>
+  <!-- Row 2 -->
+  <div class="ticker-row">
+    <div class="ticker-scroll">
+      <div class="ticker-track" style="animation-direction:reverse; animation-duration:28s;">
+        <span>Data Governance</span><span class="sep">·</span>
+        <span>Agent Governance</span><span class="sep">·</span>
+        <span>Microsoft AGT</span><span class="sep">·</span>
+        <span>AI Trust</span><span class="sep">·</span>
+        <span>A2A Protocol</span><span class="sep">·</span>
+        <span>AgentTrust</span><span class="sep">·</span>
+        <span>dbt Evidence</span><span class="sep">·</span>
+        <span>Policy Engine</span><span class="sep">·</span>
+        <span>Execution Permits</span><span class="sep">·</span>
+        <!-- duplicate -->
+        <span>Data Governance</span><span class="sep">·</span>
+        <span>Agent Governance</span><span class="sep">·</span>
+        <span>Microsoft AGT</span><span class="sep">·</span>
+        <span>AI Trust</span><span class="sep">·</span>
+        <span>A2A Protocol</span><span class="sep">·</span>
+        <span>AgentTrust</span><span class="sep">·</span>
+        <span>dbt Evidence</span><span class="sep">·</span>
+        <span>Policy Engine</span><span class="sep">·</span>
+        <span>Execution Permits</span><span class="sep">·</span>
+      </div>
+    </div>
+    <a class="ticker-link" href="opensource.html">./open-source →</a>
+  </div>
+</div>
+
+<!-- ── RECENT PROJECTS ── -->
 <div class="wrap">
-  <section class="section" id="experience">
-    <div class="section-label reveal">
-      <span class="sec-index">01</span>
-      <h2 class="sec-name">Work Experience</h2>
-      <div class="sec-line"></div>
+  <section class="section">
+    <div class="sec-header reveal">
+      <div>
+        <div class="sec-label">Selected Work</div>
+        <h2 class="sec-title">Recent<br><span class="hl">Projects</span></h2>
+      </div>
+      <a class="sec-link" href="projects.html">All projects →</a>
     </div>
 
-    <div class="exp-card reveal reveal-delay-1">
-      <div class="exp-header">
-        <div>
-          <div class="exp-role">Junior Data Analyst</div>
-          <div class="exp-company">IVS Software Solutions</div>
+    <div class="proj-grid reveal rd1">
+
+      <div class="p-card">
+        <div class="p-num">01 <span class="p-new">NEW</span></div>
+        <div class="p-title">MetricTrust Control Plane</div>
+        <div class="p-desc">Governance control plane between AI analytics agents and the systems they want to modify. Evaluates dbt evidence, issues RS256-signed permits, escalates risk, and rolls back bad actions.</div>
+        <div class="p-tags">
+          <span class="tag">Python</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">dbt</span>
+          <span class="tag">PyJWT</span>
+        </div>
+        <div class="p-links">
+          <a class="p-link" href="https://metrictrust-control-plane.onrender.com/" target="_blank">Live Demo →</a>
+          <a class="p-link" href="https://github.com/SomeshZanwar/metrictrust-control-plane" target="_blank">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="p-card">
+        <div class="p-num">02</div>
+        <div class="p-title">The Governance Stack</div>
+        <div class="p-desc">Two connected projects. One question: can this agent use this data right now? Layer 1 monitors data trustworthiness. Layer 2 governs agent authorization against live quality signals.</div>
+        <div class="p-tags">
+          <span class="tag">Microsoft AGT</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">dbt</span>
+          <span class="tag">Power BI</span>
+        </div>
+        <div class="p-links">
+          <a class="p-link" href="https://data-reliability-control-center.streamlit.app/" target="_blank">Demo L1 →</a>
+          <a class="p-link" href="https://agent-governance-simulator.streamlit.app/" target="_blank">Demo L2 →</a>
+        </div>
+      </div>
+
+      <div class="p-card">
+        <div class="p-num">03</div>
+        <div class="p-title">Metric Decomposition Engine</div>
+        <div class="p-desc">Automated root-cause analysis that answers "why did this metric change?" — decomposes any event-based KPI across dimensions, ranks drivers, and outputs a stakeholder-ready plain-English report.</div>
+        <div class="p-tags">
+          <span class="tag">Python</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">Jinja2</span>
+        </div>
+        <div class="p-links">
+          <a class="p-link" href="https://metric-change-investigator.streamlit.app/" target="_blank">Live Demo →</a>
+          <a class="p-link" href="https://github.com/SomeshZanwar/Metric-Decomposition-Engine" target="_blank">GitHub →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- ── EXPERIENCE PREVIEW ── -->
+<div class="wrap">
+  <section class="section">
+    <div class="sec-header reveal">
+      <div>
+        <div class="sec-label">Work Experience</div>
+        <h2 class="sec-title">1 Year of<br><span class="hl">Experience</span></h2>
+      </div>
+      <a class="sec-link" href="experience.html">Full experience →</a>
+    </div>
+
+    <div class="exp-timeline reveal rd1">
+      <div class="exp-entry">
+        <div class="exp-meta">
+          <div class="exp-date">Jun 2023 – Sep 2024</div>
+          <div class="exp-org">IVS Software Solutions</div>
+          <div class="exp-place">Pune, India</div>
         </div>
         <div class="exp-right">
-          <div class="exp-date">Jun 2023 – Sep 2024</div>
-          <div class="exp-loc">Pune, India</div>
-        </div>
-      </div>
-      <div class="exp-body">
-        <ul class="exp-list">
-          <li>Analyzed <span class="exp-stat">80K–150K records/cycle</span> using SQL and Python to surface KPI trends, detect anomalies, and power stakeholder reporting, directly reducing decision latency for 3 internal business teams.</li>
-          <li>Conducted structured EDA that uncovered systematic data quality gaps, improving downstream reporting accuracy by <span class="exp-stat">+30%</span> and establishing recurring data validation checkpoints.</li>
-          <li>Re-engineered SQL pipelines with optimized join logic, window functions, and incremental loads, cutting data preparation time by <span class="exp-stat">−40%</span> and accelerating dashboard refresh from daily to near-real-time.</li>
-          <li>Built reusable, analysis-ready datasets supporting weekly and monthly reporting workflows, eliminating <span class="exp-stat">4–6 hrs/cycle</span> of manual data wrangling per stakeholder cycle.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ══════════════════════════════════════
-     02 — FEATURED: GOVERNANCE STACK
-══════════════════════════════════════ -->
-<div class="wrap">
-  <section class="section" id="featured">
-    <div class="section-label reveal">
-      <span class="sec-index">02</span>
-      <h2 class="sec-name">Featured Projects</h2>
-      <div class="sec-line"></div>
-    </div>
-
-    <div class="governance-card reveal reveal-delay-1">
-      <div class="gov-top">
-        <div>
-          <div class="gov-problem">
-            <span class="highlight">// the gap:</span> most systems check whether data is accessible. almost none check whether it should be trusted right now — or whether the agent requesting it is authorized to act on it.
-          </div>
-          <h2 class="gov-title">The Governance Stack</h2>
-          <p class="gov-desc">Two connected projects. One unified question: can this agent use this data right now? The first governs the data &amp; The second governs the agent .</p>
-        </div>
-        <span class="gov-badge">Featured</span>
-      </div>
-
-      <div class="gov-layers">
-        <div class="gov-layer">
-          <div class="layer-tag amber">Layer 1 · Data Trustworthiness</div>
-          <div class="layer-title">AI Data Governance Platform</div>
-          <p class="layer-desc">Monitors 150K+ daily events across ingestion pipelines, enforces schema validation, detects anomalies in real time, and cuts incident response time by 25%. A Power BI dashboard with AI-generated explanations translates data failures into clear, actionable context — so teams know what broke, why, and who owns it.</p>
-          <div class="tech-row">
-            <span class="chip">PostgreSQL</span>
-            <span class="chip">dbt</span>
-            <span class="chip">Python</span>
-            <span class="chip">Power BI</span>
-            <span class="chip">LLM</span>
-          </div>
-          <div class="layer-links">
-            <a class="layer-link" href="https://data-reliability-control-center.streamlit.app/" target="_blank">Live Demo →</a>
-            <a class="layer-link" href="https://github.com/SomeshZanwar/AI-Data-Governance-Platform" target="_blank">GitHub →</a>
-          </div>
-        </div>
-
-        <div class="gov-layer">
-          <div class="layer-tag violet">Layer 2 · Agent Authorization</div>
-          <div class="layer-title">Data Quality-Aware Agent Governance</div>
-          <p class="layer-desc">An agent might have permission to query a dataset. The policy engine says allowed. But the dataset failed three validation tests that morning. This prototype combines Microsoft's Agent Governance Toolkit with live data quality signals — blocking agent actions when data is untrustworthy, not only when the agent lacks authorization.</p>
-          <div class="tech-row">
-            <span class="chip">Microsoft AGT</span>
-            <span class="chip">Python</span>
-            <span class="chip">YAML Policy</span>
-            <span class="chip">pytest</span>
-          </div>
-          <div class="layer-links">
-            <a class="layer-link violet-link" href="https://agent-governance-simulator.streamlit.app/" target="_blank">Live Demo →</a>
-            <a class="layer-link violet-link" href="https://github.com/SomeshZanwar/Data-Quality-Aware-Agent-Governance" target="_blank">GitHub →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="gov-pipeline">
-        <div class="pipe-label">Combined governance flow</div>
-        <div class="pipeline">
-          <div class="pipe-step">Agent Request</div><div class="pipe-arr">›</div>
-          <div class="pipe-step">Identity Check</div><div class="pipe-arr">›</div>
-          <div class="pipe-step">AGT Policy</div><div class="pipe-arr">›</div>
-          <div class="pipe-step">Data Quality Registry</div><div class="pipe-arr">›</div>
-          <div class="pipe-step">Allow / Block</div><div class="pipe-arr">›</div>
-          <div class="pipe-step">Unified Audit Log</div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ══════════════════════════════════════
-     03 — OPEN SOURCE CONTRIBUTIONS
-══════════════════════════════════════ -->
-<div class="wrap">
-  <section class="section" id="opensource">
-    <div class="section-label reveal">
-      <span class="sec-index">03</span>
-      <h2 class="sec-name">Open Source Contributions</h2>
-      <div class="sec-line"></div>
-    </div>
-
-    <div class="oss-grid">
-
-      <!-- CHANGE 3: AGT card — full-width, 2-column bullet layout -->
-      <div class="oss-card agt oss-card-wide reveal reveal-delay-1">
-        <div class="oss-top">
-          <div>
-            <div class="oss-org">Microsoft</div>
-            <div class="oss-repo">microsoft/agent-governance-toolkit</div>
-          </div>
-          <span class="status-pill merged">4 PRs Merged</span>
-        </div>
-        <div class="oss-title">Agent Governance Toolkit Contributions</div>
-        <div class="oss-wide-grid">
-          <ul class="oss-list">
-            <li>PR <code>#1818</code> merged: Added Data Quality-Aware Agent Governance to the official AGT adopter registry.</li>
-            <li>PR <code>#2038</code> merged: Verified the Agent SRE tutorial end-to-end and fixed documentation/API reference issues.</li>
-          </ul>
-          <ul class="oss-list">
-            <li>PR <code>#2224</code> merged: Added a generic data-quality-aware governance example showing AGT policy checks combined with dataset trust signals.</li>
-            <li>PR <code>#2278</code> merged: Added a dbt-backed DataQualityEvidence adapter showing dbt run_results.json → DataQualityEvidence → AGT policy decision flow.</li>
+          <div class="exp-role">Junior Data Analyst</div>
+          <ul class="exp-list">
+            <li>Analyzed <span class="exp-stat">80K–150K records/cycle</span> using SQL and Python to surface KPI trends, detect anomalies, and power stakeholder reporting for 3 internal business teams.</li>
+            <li>Improved downstream reporting accuracy by <span class="exp-stat">+30%</span> through structured EDA that uncovered systematic data quality gaps.</li>
+            <li>Cut data preparation time by <span class="exp-stat">−40%</span> by re-engineering SQL pipelines with optimized join logic, window functions, and incremental loads.</li>
+            <li>Built reusable datasets eliminating <span class="exp-stat">4–6 hrs/cycle</span> of manual wrangling per stakeholder cycle.</li>
           </ul>
         </div>
-        <div class="oss-footer">
-          Discussion #1795 · PR #1818 · PR #2038 · PR #2224 · PR #2278<br>
-          <a href="https://github.com/microsoft/agent-governance-toolkit" target="_blank">github.com/microsoft/agent-governance-toolkit →</a>
-        </div>
-      </div>
-
-      <!-- CHANGE 4: A2A card — updated with both issues -->
-      <div class="oss-card a2a reveal reveal-delay-2">
-        <div class="oss-top">
-          <div>
-            <div class="oss-org">A2A Project</div>
-            <div class="oss-repo">a2aproject/A2A</div>
-          </div>
-          <span class="status-pill accepted">Proposal Work</span>
-        </div>
-        <div class="oss-title">Data-Quality &amp; Governance Proposals for A2A</div>
-        <ul class="oss-list">
-          <li>Issue <code>#1786</code>: Proposed a <code>data-quality</code> scheme for the CTEF <code>source_version</code> registry, with conformance-style test vectors covering within-bound, boundary, and out-of-bound values.</li>
-          <li>Issue <code>#1835</code>: Proposed vendor-neutral documentation for governance and security expectations in agent-to-agent systems — covering trust representation, policy boundaries, and audit evidence.</li>
-          <li>Both proposals are awaiting maintainer response; follow-up planned as the protocol evolves.</li>
-        </ul>
-        <div class="oss-footer">
-          Issue #1786 · Issue #1835 · Proposal work<br>
-          <a href="https://github.com/a2aproject/A2A" target="_blank">github.com/a2aproject/A2A →</a>
-        </div>
-      </div>
-
-      <!-- CHANGE 5: New AgentTrust card -->
-      <div class="oss-card at reveal reveal-delay-3">
-        <div class="oss-top">
-          <div>
-            <div class="oss-org">AgentTrust</div>
-            <div class="oss-repo">agentTrust · contributor program</div>
-          </div>
-          <span class="status-pill invited">Early Contributor</span>
-        </div>
-        <div class="oss-title">AgentTrust — Early Contributor Invitation</div>
-        <ul class="oss-list">
-          <li>Invited as an early contributor to the AgentTrust project, recognized for work in AI governance, data quality-aware agent systems, and policy-readable evidence patterns.</li>
-          <li>Areas of alignment include agent trust metadata, policy-aware AI systems, governance evidence, RAG corpus binding concepts, and operational AI governance workflows.</li>
-          <li>Contribution direction covers how agent systems expose policy, security, quality, and reliability signals — and how trust metadata connects to drift and trustworthiness checks.</li>
-        </ul>
-        <div class="oss-footer">
-          Early Contributor Program · Invitation received
-        </div>
-      </div>
-
-    </div>
-  </section>
-</div>
-
-<!-- ══════════════════════════════════════
-     04 — PROJECTS
-══════════════════════════════════════ -->
-<div class="wrap">
-  <section class="section" id="projects">
-    <div class="section-label reveal">
-      <span class="sec-index">04</span>
-      <h2 class="sec-name">Projects</h2>
-      <div class="sec-line"></div>
-    </div>
-
-    <div class="proj-grid">
-
-      <!-- DataTrust OS — full width, NEW -->
-      <div class="proj-card proj-card-wide reveal">
-        <div class="proj-num">PROJECT · 01 <span class="proj-new">NEW</span></div>
-        <h3 class="proj-title">DataTrust OS</h3>
-        <div class="proj-inner">
-          <ul class="proj-list">
-            <li>Designed a governance-ready analytics engineering foundation using PostgreSQL, dbt, and Python, combining schema validation, data quality testing, and reconciliation checks into a single base layer for downstream reporting and governance tooling.</li>
-            <li>Built governance marts that expose dataset health scores, validation results, and anomaly flags as structured outputs — turning pipeline-level dbt test results into signals other systems can read.</li>
-          </ul>
-          <ul class="proj-list">
-            <li>Implemented anomaly detection and reconciliation logic comparing transformed records against source records, surfacing discrepancies before they reach a dashboard or stakeholder.</li>
-            <li>Established the data quality evidence layer that the AI Data Governance Platform (Layer 1 of the Governance Stack) is built on top of, connecting dbt test outcomes to governance-ready trust signals.</li>
-          </ul>
-        </div>
-        <div class="proj-outcome" style="margin-top:16px;">
-          <strong>Outcome</strong>
-          The foundational analytics engineering layer beneath the Governance Stack — the schema validation, data quality testing, and governance marts built here are what the AI Data Governance Platform reports on.
-        </div>
-        <div class="proj-footer">
-          <a class="proj-link" href="https://github.com/SomeshZanwar/Datatrust-OS" target="_blank">GitHub Repo →</a>
-        </div>
-      </div>
-
-      <!-- Metric Decomposition Engine -->
-      <div class="proj-card reveal reveal-delay-1">
-        <div class="proj-num">PROJECT · 02</div>
-        <h3 class="proj-title">Metric Decomposition Engine</h3>
-        <ul class="proj-list">
-          <li>Built an automated root-cause analysis system that answers the most common analyst question — "why did this metric change?" — by decomposing any event-based metric across multiple dimensions and ranking each segment's contribution to the total movement.</li>
-          <li>Engineered a dimensional drilldown pipeline on GitHub Archive data (1.3M+ events) using PostgreSQL and pandas, processing baseline vs. comparison periods across actor, repository, and organization dimensions in seconds.</li>
-          <li>Generated plain-English incident reports via a Jinja2 template engine: executive summary, dimensional breakdowns, root cause hypothesis, and recommended next steps — stakeholder-ready with no manual formatting.</li>
-          <li>Built an interactive Streamlit dashboard letting analysts select any event type, date range, and dimension set on demand, turning a multi-hour manual investigation into a self-serve workflow.</li>
-        </ul>
-        <div class="proj-outcome">
-          <strong>Outcome</strong>
-          What used to take hours of manual slicing is now a self-serve analysis that runs in seconds and outputs a report ready to share with a PM or stakeholder.
-        </div>
-        <div class="proj-footer">
-          <a class="proj-link" href="https://metric-change-investigator.streamlit.app/" target="_blank">Live Demo →</a>
-          <a class="proj-link" href="https://github.com/SomeshZanwar/Metric-Decomposition-Engine" target="_blank">GitHub →</a>
-        </div>
-      </div>
-
-      <!-- Decision Intelligence -->
-      <div class="proj-card reveal reveal-delay-2">
-        <div class="proj-num">PROJECT · 03</div>
-        <h3 class="proj-title">Decision Intelligence Experimentation Platform</h3>
-        <ul class="proj-list">
-          <li>Architected an end-to-end A/B testing platform simulating 50K+ users and 280K+ events, enabling statistically rigorous evaluation of product feature variants across user segments.</li>
-          <li>Designed hypothesis testing pipelines (z-test, t-test, Mann-Whitney) surfacing a conversion-vs-revenue trade-off that directly informed a go/no-go product launch decision.</li>
-          <li>Built interactive Streamlit dashboard for non-technical stakeholders, reducing analyst involvement in experiment readouts by ~60%.</li>
-          <li>Built a dbt-powered metrics layer transforming raw event data into experiment-ready datasets with conversion rate, lift, and AOV calculations.</li>
-        </ul>
-        <div class="proj-outcome">
-          <strong>Outcome</strong>
-          Product and analytics teams can run structured experiments and connect statistical results to actual rollout decisions — not just look at charts and guess.
-        </div>
-        <div class="proj-footer">
-          <a class="proj-link" href="https://experiment-decision-simulator.streamlit.app/" target="_blank">Live Demo →</a>
-          <a class="proj-link" href="https://github.com/SomeshZanwar/Decision-Intelligence-Experimentation-Platform" target="_blank">GitHub →</a>
-        </div>
-      </div>
-
-      <!-- Retail Analytics -->
-      <div class="proj-card reveal reveal-delay-3">
-        <div class="proj-num">PROJECT · 04</div>
-        <h3 class="proj-title">Retail Analytics &amp; Inventory Intelligence</h3>
-        <ul class="proj-list">
-          <li>Applied Pareto analysis to identify the top 20% of SKUs driving 75% of revenue, enabling data-backed inventory reallocation and merchandising decisions.</li>
-          <li>Designed a retail analytics pipeline transforming 541K+ raw transactions into structured revenue and inventory models using a layered SQL + dbt architecture.</li>
-          <li>Engineered SQL aggregations and indexing strategies reducing dashboard load times by 40%.</li>
-          <li>Automated recurring reporting dashboards saving 3–4 hours of manual effort per week for business stakeholders.</li>
-        </ul>
-        <div class="proj-footer">
-          <a class="proj-link" href="https://github.com/SomeshZanwar/retail-sales-inventory-analytics" target="_blank">GitHub Repo →</a>
-        </div>
-      </div>
-
-      <!-- Churn Prediction -->
-      <div class="proj-card reveal reveal-delay-4">
-        <div class="proj-num">PROJECT · 05</div>
-        <h3 class="proj-title">Customer Churn Prediction &amp; Explainability</h3>
-        <ul class="proj-list">
-          <li>Built an end-to-end churn prediction pipeline using XGBoost on 7,043 customers and 21 features, achieving ROC-AUC 0.84.</li>
-          <li>Applied SHAP explainability to identify the key drivers of churn — then translated those drivers into specific retention strategies a team could act on, not just a model score.</li>
-          <li>Engineered predictive features and applied resampling techniques to address class imbalance, improving recall by 18%.</li>
-        </ul>
-        <div class="proj-outcome">
-          <strong>Outcome</strong>
-          A model that doesn't just predict churn accurately, but explains why it's happening in terms a retention team can actually use.
-        </div>
-        <div class="proj-footer">
-          <a class="proj-link" href="https://github.com/SomeshZanwar/customer-churn-prediction-explainability" target="_blank">GitHub Repo →</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-</div>
-
-<!-- ══════════════════════════════════════
-     05 — SKILLS
-══════════════════════════════════════ -->
-<div class="wrap">
-  <section class="section" id="skills">
-    <div class="section-label reveal">
-      <span class="sec-index">05</span>
-      <h2 class="sec-name">Skills</h2>
-      <div class="sec-line"></div>
-    </div>
-    <div class="skills-layout reveal reveal-delay-1">
-      <div class="skill-col">
-        <div class="skill-col-title">Analytics &amp; Querying</div>
-        <ul class="skill-list">
-          <li class="hi">SQL</li>
-          <li class="hi">Python</li>
-          <li class="hi">BigQuery</li>
-          <li class="hi">Power BI</li>
-          <li class="hi">KPI Development</li>
-          <li>Pandas · NumPy</li>
-          <li>Window Functions · CTEs</li>
-          <li>Query Optimization</li>
-          <li>EDA</li>
-          <li>Data Storytelling</li>
-        </ul>
-      </div>
-      <div class="skill-col">
-        <div class="skill-col-title">Product &amp; Business Analytics</div>
-        <ul class="skill-list">
-          <li class="hi">A/B Testing</li>
-          <li class="hi">Experiment Design</li>
-          <li class="hi">Funnel Analysis</li>
-          <li class="hi">Cohort Analysis</li>
-          <li>Retention Analysis</li>
-          <li>Hypothesis Testing</li>
-          <li>Lift Analysis</li>
-          <li>Statistical Inference</li>
-          <li>Tableau</li>
-          <li>Streamlit · Plotly</li>
-        </ul>
-      </div>
-      <div class="skill-col">
-        <div class="skill-col-title">Data Eng. &amp; Governance</div>
-        <ul class="skill-list">
-          <li class="hi">dbt</li>
-          <li class="hi">PostgreSQL</li>
-          <li class="hi">Data Governance</li>
-          <li class="hi">Agent Governance · AGT</li>
-          <li>ETL Pipelines</li>
-          <li>Data Quality Monitoring</li>
-          <li>Star / Snowflake Schema</li>
-          <li>Data Validation</li>
-          <li>MySQL · BigQuery</li>
-          <li>Data Lineage</li>
-        </ul>
-      </div>
-      <div class="skill-col">
-        <div class="skill-col-title">ML &amp; Tools</div>
-        <ul class="skill-list">
-          <li class="hi">Scikit-learn</li>
-          <li class="hi">XGBoost</li>
-          <li class="hi">SHAP</li>
-          <li>Feature Engineering</li>
-          <li>Model Evaluation</li>
-          <li>GCP</li>
-          <li>Docker · Git</li>
-          <li>Jira · Salesforce</li>
-          <li>Jupyter</li>
-        </ul>
       </div>
     </div>
   </section>
 </div>
 
-<!-- ══════════════════════════════════════
-     06 — EDUCATION
-══════════════════════════════════════ -->
+<!-- ── EDUCATION ── -->
 <div class="wrap">
-  <section class="section" id="education">
-    <div class="section-label reveal">
-      <span class="sec-index">06</span>
-      <h2 class="sec-name">Education</h2>
-      <div class="sec-line"></div>
+  <section class="section">
+    <div class="sec-header reveal">
+      <div>
+        <div class="sec-label">Academic Background</div>
+        <h2 class="sec-title">Education</h2>
+      </div>
     </div>
-    <div class="edu-grid">
-      <div class="edu-card reveal reveal-delay-1">
-        <div class="edu-degree">Master of Science — Data Science</div>
-        <div class="edu-school">The University of Texas at Arlington</div>
+    <div class="edu-grid reveal rd1">
+      <div class="edu-card">
+        <div class="edu-deg">Master of Science — Data Science</div>
+        <div class="edu-school">University of Texas at Arlington</div>
         <div class="edu-dates">Jan 2025 – Dec 2026</div>
         <div class="edu-gpa">GPA 3.8 / 4.0</div>
-        <div class="edu-courses">
+        <div class="edu-info">
           <strong>Relevant Coursework</strong>
-          Data Mining · Neural Network &amp; Deep Learning · Convex Optimization · Cloud Computing &amp; Big Data
+          Data Mining · Neural Networks &amp; Deep Learning · Convex Optimization · Cloud Computing &amp; Big Data
         </div>
       </div>
-      <div class="edu-card reveal reveal-delay-2">
-        <div class="edu-degree">Bachelor of Engineering — AI &amp; Machine Learning</div>
-        <div class="edu-school">Savitribai Phule Pune University, India</div>
+      <div class="edu-card">
+        <div class="edu-deg">Bachelor of Engineering — AI &amp; Machine Learning</div>
+        <div class="edu-school">Savitribai Phule Pune University</div>
         <div class="edu-dates">Aug 2020 – May 2024</div>
         <div class="edu-gpa">GPA 8.2 / 10</div>
-        <div class="edu-courses">
+        <div class="edu-info">
           <strong>Relevant Coursework</strong>
-          Artificial Intelligence · Machine Learning · Natural Language Processing · Database Management Systems
+          Artificial Intelligence · Machine Learning · Natural Language Processing · Database Management
         </div>
       </div>
     </div>
   </section>
 </div>
 
-<!-- ══════════════════════════════════════
-     07 — CONTACT
-══════════════════════════════════════ -->
+<!-- ── CONTACT ── -->
 <div class="wrap">
-  <section class="section" id="contact">
-    <div class="section-label reveal">
-      <span class="sec-index">07</span>
-      <h2 class="sec-name">Contact</h2>
-      <div class="sec-line"></div>
+  <div class="contact-band reveal">
+    <div class="contact-heading">
+      Let's Work<br><span class="hl">Together</span>
     </div>
-    <div class="contact-layout reveal reveal-delay-1">
-      <div class="contact-cell">
-        <div class="contact-key">Email</div>
-        <div class="contact-val"><a href="mailto:someshzanwar345@gmail.com">someshzanwar345@gmail.com</a></div>
-      </div>
-      <div class="contact-cell">
-        <div class="contact-key">Phone</div>
-        <div class="contact-val"><a href="tel:6824030698">(682) 403-0698</a></div>
-        <div class="contact-note">Arlington, TX</div>
-      </div>
-      <div class="contact-cell">
-        <div class="contact-key">GitHub</div>
-        <div class="contact-val"><a href="https://github.com/SomeshZanwar" target="_blank">github.com/SomeshZanwar</a></div>
-      </div>
-      <div class="contact-cell">
-        <div class="contact-key">LinkedIn</div>
-        <div class="contact-val"><a href="https://linkedin.com/in/someshzanwar" target="_blank">linkedin.com/in/someshzanwar</a></div>
-      </div>
+    <p class="contact-sub">Open to Data Analyst, BI Analyst, Product Analyst, Analytics Engineer, and AI/Data Governance roles for Summer / Fall 2026.</p>
+    <div class="contact-row">
+      <a class="btn btn-solid" href="mailto:someshzanwar345@gmail.com">someshzanwar345@gmail.com</a>
+      <a class="btn btn-outline" href="https://linkedin.com/in/someshzanwar" target="_blank">LinkedIn</a>
+      <a class="btn btn-outline" href="Somesh_Zanwar.pdf" download>Resume PDF</a>
     </div>
-  </section>
+  </div>
 </div>
 
-<!-- ── FOOTER ── -->
+<!-- ── FOOTER ── */
 <footer>
-  <span>© <span id="yr"></span> Somesh Zanwar</span>
+  <span>© <span class="yr"></span> Somesh Zanwar</span>
   <div class="footer-r">
-    <span>MS Data Science · UT Arlington · GPA 3.8</span>
+    <span>MS Data Science · UT Arlington</span>
     <span>F-1 OPT · No sponsorship required</span>
-    <span>Open Summer/Fall 2026</span>
     <a href="mailto:someshzanwar345@gmail.com">someshzanwar345@gmail.com</a>
   </div>
 </footer>

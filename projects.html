@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Projects — Somesh Zanwar. Analytics engineering, AI governance, data quality, and decision intelligence systems.">
+<title>Projects — Somesh Zanwar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Instrument+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<header class="nav">
+  <a href="index.html" class="nav-logo">Somesh Zanwar</a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="experience.html">Experience</a>
+    <a href="tools.html">Tools</a>
+    <a href="opensource.html">Open Source</a>
+  </nav>
+  <a href="mailto:someshzanwar345@gmail.com" class="nav-cta">Contact</a>
+</header>
+
+<!-- ── PAGE HERO ── -->
+<div class="wrap" style="padding-top:var(--nav-h)">
+  <div class="pg-hero reveal">
+    <div class="pg-label">Portfolio</div>
+    <h1 class="pg-title">All<br><span class="hl">Projects</span></h1>
+    <p class="pg-sub">Six deployed systems spanning AI governance, analytics engineering, decision intelligence, and machine learning — each with a live demo or public repo.</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     FEATURED — THE GOVERNANCE STACK
+══════════════════════════════════════ -->
+<div class="wrap">
+  <section class="section">
+    <div class="sec-header reveal">
+      <div>
+        <div class="sec-label">Featured</div>
+        <h2 class="sec-title">The Governance<br><span class="hl">Stack</span></h2>
+      </div>
+      <span style="font-family:var(--font-m);font-size:10px;color:var(--text4);letter-spacing:2px;text-transform:uppercase;align-self:flex-end;">Two projects · One question</span>
+    </div>
+
+    <div class="gov-card reveal rd1">
+      <div class="gov-top">
+        <div>
+          <div class="gov-problem">
+            <span class="hl">// the gap:</span> most systems check whether data is accessible. almost none check whether it should be trusted right now — or whether the agent requesting it is authorized to act on it.
+          </div>
+          <div class="gov-title">The Governance Stack</div>
+          <div class="gov-desc">Two connected projects. One unified question: can this agent use this data right now? The first governs the data. The second governs the agent.</div>
+        </div>
+        <span class="gov-badge">Featured</span>
+      </div>
+
+      <div class="gov-layers">
+        <div class="gov-layer">
+          <div class="layer-tag a">Layer 1 · Data Trustworthiness</div>
+          <div class="layer-name">AI Data Governance Platform</div>
+          <div class="layer-body">Monitors 150K+ daily events across ingestion pipelines, enforces schema validation, detects anomalies in real time, and cuts incident response time by 25%. A Power BI dashboard with AI-generated explanations translates data failures into clear, actionable context.</div>
+          <div class="chips">
+            <span class="chip">PostgreSQL</span><span class="chip">dbt</span>
+            <span class="chip">Python</span><span class="chip">Power BI</span><span class="chip">LLM</span>
+          </div>
+          <div class="layer-links">
+            <a class="l-link" href="https://data-reliability-control-center.streamlit.app/" target="_blank">Live Demo →</a>
+            <a class="l-link" href="https://github.com/SomeshZanwar/AI-Data-Governance-Platform" target="_blank">GitHub →</a>
+          </div>
+        </div>
+        <div class="gov-layer">
+          <div class="layer-tag v">Layer 2 · Agent Authorization</div>
+          <div class="layer-name">Data Quality-Aware Agent Governance</div>
+          <div class="layer-body">An agent might have permission to query a dataset. The policy engine says allowed. But the dataset failed three validation tests that morning. This prototype combines Microsoft's Agent Governance Toolkit with live data quality signals — blocking agent actions when data is untrustworthy.</div>
+          <div class="chips">
+            <span class="chip">Microsoft AGT</span><span class="chip">Python</span>
+            <span class="chip">YAML Policy</span><span class="chip">pytest</span>
+          </div>
+          <div class="layer-links">
+            <a class="l-link" href="https://agent-governance-simulator.streamlit.app/" target="_blank">Live Demo →</a>
+            <a class="l-link" href="https://github.com/SomeshZanwar/Data-Quality-Aware-Agent-Governance" target="_blank">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gov-pipe">
+        <div class="pipe-label">Combined governance flow</div>
+        <div class="pipeline">
+          <div class="ps">Agent Request</div><div class="pa">›</div>
+          <div class="ps">Identity Check</div><div class="pa">›</div>
+          <div class="ps">AGT Policy</div><div class="pa">›</div>
+          <div class="ps">Data Quality Registry</div><div class="pa">›</div>
+          <div class="ps">Allow / Block</div><div class="pa">›</div>
+          <div class="ps">Unified Audit Log</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════════
+     ALL PROJECTS GRID
+══════════════════════════════════════ -->
+<div class="wrap">
+  <section class="section">
+    <div class="sec-header reveal">
+      <div>
+        <div class="sec-label">All Work</div>
+        <h2 class="sec-title">Project<br><span class="hl">Index</span></h2>
+      </div>
+    </div>
+
+    <div class="proj-grid proj-grid-2" style="gap:1px;">
+
+      <!-- 01 MetricTrust — full width -->
+      <div class="p-card full">
+        <div class="p-num">01 <span class="p-new">NEW</span></div>
+        <div class="p-title" style="font-size:20px;">MetricTrust Control Plane</div>
+        <div class="p-card-wide-inner">
+          <ul class="exp-list" style="margin-bottom:0;">
+            <li>Built a governance control plane that intercepts AI analytics agent actions before execution — evaluating real dbt test evidence through deterministic YAML policies to decide whether to allow, escalate for human approval, or block.</li>
+            <li>Designed a short-lived RS256-signed execution permit system using PyJWT — permits expire after use and actively reject replay attacks and tampered tokens.</li>
+          </ul>
+          <ul class="exp-list" style="margin-bottom:0;">
+            <li>Implemented an automatic rollback layer that monitors post-execution guardrails and reverses agent actions when data quality checks fail after the fact.</li>
+            <li>Validated with 21 automated tests and 7 dbt data tests; deployed on Render with an end-to-end live demo covering the complete governance decision cycle.</li>
+          </ul>
+        </div>
+        <div style="margin-top:16px;padding:12px 14px;background:var(--amber-faint);border-left:2px solid var(--amber-dim);border-radius:0 6px 6px 0;font-size:12.5px;color:var(--text2);line-height:1.6;font-style:italic;">
+          <strong style="display:block;font-family:var(--font-m);font-size:8.5px;color:var(--amber-dim);letter-spacing:1.5px;text-transform:uppercase;font-style:normal;margin-bottom:4px;">Outcome</strong>
+          Not just a policy engine — an execution control system that issues signed, expiring permits, escalates ambiguous cases to humans, rolls back bad actions, and leaves a verifiable audit trail.
+        </div>
+        <div class="p-tags" style="margin-top:14px;">
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">dbt Core</span>
+          <span class="tag">DuckDB</span><span class="tag">PyJWT · RS256</span><span class="tag">YAML Policy</span><span class="tag">Render</span>
+        </div>
+        <div class="p-links">
+          <a class="p-link" href="https://metrictrust-control-plane.onrender.com/" target="_blank">Live Demo →</a>
+          <a class="p-link" href="https://github.com/SomeshZanwar/metrictrust-control-plane" target="_blank">GitHub →</a>
+        </div>
+      </div>
+
+      <!-- 02 DataTrust OS -->
+      <div class="p-card">
+        <div class="p-num">02</div>
+        <div class="p-title">DataTrust OS</div>
+        <ul class="exp-list" style="margin-bottom:14px;">
+          <li>Governance-ready analytics engineering foundation combining schema validation, data quality testing, and reconciliation checks into a single base layer for downstream reporting and governance tooling.</li>
+          <li>Built governance marts that expose dataset health scores, validation results, and anomaly flags as structured outputs — turning pipeline-level dbt test results into signals other systems can read.</li>
+          <li>The foundational layer the AI Data Governance Platform is built on top of, connecting dbt test outcomes to governance-ready trust signals.</li>
+        </ul>
+        <div class="p-tags">
+          <span class="tag">PostgreSQL</span><span class="tag">dbt</span><span class="tag">Python</span><span class="tag">SQL</span>
+        </div>
+        <div class="p-links">
+          <a class="p-link" href="https://github.com/SomeshZanwar/Datatrust-OS" target="_blank">GitHub →</a>
+        </div>
+      </div>
+
+      <!-- 03 Metric Decomposition -->
+      <div class="p-card">
+        <div class="p-num">03</div>
+        <div class="p-title">Metric Decomposition Engine</div>
+        <ul class="exp-list" style="margin-bottom:14px;">
+          <li>Automated root-cause analysis answering "why did this metric change?" by decomposing any event-based metric across multiple dimensions and ranking each segment's contribution to the total movement.</li>
+          <li>Dimensional drilldown pipeline on GitHub Archive data (1.3M+ events) using PostgreSQL and pandas, processing baseline vs. comparison periods in seconds.</li>
+          <li>Plain-English incident reports via Jinja2: executive summary, breakdowns, root cause hypothesis, and recommended next steps — no manual formatting.</li>
+          <li>Interactive Streamlit dashboard turning a multi-hour manual investigation into a self-serve workflow.</li>
+        </ul>
+        <div class="p-tags">
+          <span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">Pandas</span><span class="tag">Streamlit</span><span class="tag">Jinja2</span>
+        </div>
+        <div class="p-links">
+          <a class="p-link" href="https://metric-change-investigator.streamlit.app/" target="_blank">Live Demo →</a>
+          <a class="p-link" href="https://github.com/SomeshZanwar/Metric-Decomposition-Engine" target="_blank">GitHub →</a>
+        </div>
+      </div>
+
+      <!-- 04 Decision Intelligence -->
+      <div class="p-card">
+        <div class="p-num">04</div>
+        <div class="p-title">Decision Intelligence Experimentation Platform</div>
+        <ul class="exp-list" style="margin-bottom:14px;">
+          <li>End-to-end A/B testing platform simulating 50K+ users and 280K+ events, enabling statistically rigorous evaluation of product feature variants across user segments.</li>
+          <li>Hypothesis testing pipelines (z-test, t-test, Mann-Whitney) surfacing a conversion-vs-revenue trade-off that directly informed a go/no-go product launch decision.</li>
+          <li>Interactive Streamlit dashboard for non-technical stakeholders, reducing analyst involvement in experiment readouts by ~60%.</li>
+          <li>dbt-powered metrics layer transforming raw event data into experiment-ready datasets with conversion rate, lift, and AOV calculations.</li>
+        </ul>
+        <div class="p-tags">
+          <span class="tag">Python</span><span class="tag">dbt</span><span class="tag">PostgreSQL</span><span class="tag">Streamlit</span>
+        </div>
+        <div class="p-links">
+          <a class="p-link" href="https://experiment-decision-simulator.streamlit.app/" target="_blank">Live Demo →</a>
+          <a class="p-link" href="https://github.com/SomeshZanwar/Decision-Intelligence-Experimentation-Platform" target="_blank">GitHub →</a>
+        </div>
+      </div>
+
+      <!-- 05 Retail Analytics -->
+      <div class="p-card">
+        <div class="p-num">05</div>
+        <div class="p-title">Retail Analytics &amp; Inventory Intelligence</div>
+        <ul class="exp-list" style="margin-bottom:14px;">
+          <li>Pareto analysis identifying the top 20% of SKUs driving 75% of revenue, enabling data-backed inventory reallocation and merchandising decisions.</li>
+          <li>Retail analytics pipeline transforming 541K+ raw transactions into structured revenue and inventory models using a layered SQL + dbt architecture.</li>
+          <li>SQL aggregations and indexing strategies reducing dashboard load times by 40%, and automated reporting saving 3–4 hours per week.</li>
+        </ul>
+        <div class="p-tags">
+          <span class="tag">SQL</span><span class="tag">dbt</span><span class="tag">PostgreSQL</span>
+        </div>
+        <div class="p-links">
+          <a class="p-link" href="https://github.com/SomeshZanwar/retail-sales-inventory-analytics" target="_blank">GitHub →</a>
+        </div>
+      </div>
+
+      <!-- 06 Churn Prediction -->
+      <div class="p-card">
+        <div class="p-num">06</div>
+        <div class="p-title">Customer Churn Prediction &amp; Explainability</div>
+        <ul class="exp-list" style="margin-bottom:14px;">
+          <li>End-to-end churn prediction pipeline using XGBoost on 7,043 customers and 21 features, achieving ROC-AUC 0.84.</li>
+          <li>SHAP explainability to identify key drivers of churn — then translated those drivers into specific retention strategies a team could act on, not just a model score.</li>
+          <li>Feature engineering and resampling techniques to address class imbalance, improving recall by 18%.</li>
+        </ul>
+        <div class="p-tags">
+          <span class="tag">XGBoost</span><span class="tag">SHAP</span><span class="tag">scikit-learn</span><span class="tag">Python</span>
+        </div>
+        <div class="p-links">
+          <a class="p-link" href="https://github.com/SomeshZanwar/customer-churn-prediction-explainability" target="_blank">GitHub →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- ── CONTACT ── -->
+<div class="wrap">
+  <div class="contact-band reveal">
+    <div class="contact-heading">Let's Work<br><span class="hl">Together</span></div>
+    <p class="contact-sub">Open to Data Analyst, Analytics Engineer, and AI/Data Governance roles for Summer / Fall 2026.</p>
+    <div class="contact-row">
+      <a class="btn btn-solid" href="mailto:someshzanwar345@gmail.com">someshzanwar345@gmail.com</a>
+      <a class="btn btn-outline" href="https://linkedin.com/in/someshzanwar" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>© <span class="yr"></span> Somesh Zanwar</span>
+  <div class="footer-r">
+    <a href="index.html">Home</a>
+    <a href="opensource.html">Open Source</a>
+    <a href="mailto:someshzanwar345@gmail.com">someshzanwar345@gmail.com</a>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
