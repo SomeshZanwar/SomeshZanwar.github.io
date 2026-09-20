@@ -64,3 +64,22 @@
 }
 @media(max-width:480px){.hero-title{font-size:15vw}.hero-person{bottom:auto;width:min(75vw,340px);height:min(83vw,390px)}.hero-bottom p{display:block;font-size:13px;max-width:190px}.hero-bottom .contact-pill{min-width:0;margin-left:0}}
 @media(prefers-reduced-motion:reduce){.scroll-cue svg,.float-object,.orbit-center,.visual-bars i{animation:none!important}.hero-person:hover img{transform:none}.project-tile:hover{transform:none!important}}
+
+/* Motion that remains visible even when the visitor is not scrolling. */
+.hero-title,.gradient-text{background-size:220% 100%;animation:title-sheen 8s ease-in-out infinite alternate}
+.portrait-glow{animation:glow-breathe 5s ease-in-out infinite}
+.marquee-track{will-change:transform}
+.marquee-forward{animation:marquee-forward 32s linear infinite alternate}
+.marquee-backward{animation:marquee-backward 36s linear infinite alternate}
+.marquee-row:hover .marquee-track{animation-play-state:paused}
+.eyebrow::before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:#d49bd8;vertical-align:middle;margin-right:12px;box-shadow:0 0 0 0 #d49bd866;animation:signal-pulse 3s ease-out infinite}
+.experience-bullets{display:grid;gap:17px;list-style:none;padding:0;margin:30px 0 34px}
+.experience-bullets li{position:relative;padding-left:26px;font-size:clamp(16px,1.3vw,19px);line-height:1.4;font-weight:300;color:var(--muted)}
+.experience-bullets li::before{content:'';position:absolute;left:0;top:.47em;width:9px;height:9px;border-radius:2px;transform:rotate(45deg);background:#d49bd8;box-shadow:0 0 12px #d49bd866}
+@keyframes title-sheen{from{background-position:0% 50%}to{background-position:100% 50%}}
+@keyframes glow-breathe{50%{opacity:.6;scale:1.12}}
+@keyframes marquee-forward{from{transform:translateX(0)}to{transform:translateX(-39%)}}
+@keyframes marquee-backward{from{transform:translateX(-35%)}to{transform:translateX(0)}}
+@keyframes signal-pulse{50%{box-shadow:0 0 0 7px #d49bd800}}
+@media(max-width:750px){.experience-bullets{gap:15px;margin:26px 0 30px}.experience-bullets li{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.hero-title,.gradient-text,.portrait-glow,.marquee-track,.eyebrow::before{animation:none!important}.marquee-backward{transform:none}}
