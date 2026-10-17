@@ -1,17 +1,20 @@
-# Somesh Zanwar portfolio
+# Portfolio
 
-The source for the new one-page portfolio is in `app/` (React, TypeScript, Tailwind CSS, Framer Motion, and Lucide React). GitHub Pages serves the **built** `index.html` and `assets/` from the repository root. The previous page URLs redirect to sections of the new site.
+Personal site for Somesh Zanwar. Next.js (static export), self-hosted fonts, no tracking, deployed to GitHub Pages.
 
-## Preview changes locally
+## Edit content
+Everything lives in `lib/content.ts`. Rule: every claim is linkable or labelled self-reported.
 
+## Run
 ```bash
-cd app
 npm install
-npm run dev
+npm run dev          # http://localhost:3000
+npm run build        # static site in ./out
 ```
 
-Open the localhost URL printed by Vite. For a preview of the exact GitHub Pages files after building, run `npm run pages` from `app/`, then in the repository root run `python -m http.server 8765` and visit `http://localhost:8765/index.html`.
+## Deploy (GitHub Pages)
+Push to `main`. The workflow in `.github/workflows/deploy.yml` builds with `NEXT_PUBLIC_BASE_PATH=/<repo-name>`.
+In the repo: Settings -> Pages -> Source: GitHub Actions. For a custom domain or a `<user>.github.io` repo, set the base path to empty.
 
-## Publish source changes
-
-From `app/`, run `npm run pages`. Commit your source changes **and** the generated root `index.html`, `assets/`, and redirect pages. GitHub Pages serves the root files when the publishing branch is updated. The résumé download refers to the existing root file `Somesh_Zanwar.pdf`.
+## Resume PDF
+`public/Somesh_Zanwar_Resume.pdf` is rendered from `/resume/`. Regenerate with `scripts/make-pdf.mjs` after editing the resume page.
